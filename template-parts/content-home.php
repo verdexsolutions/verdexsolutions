@@ -232,7 +232,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
 
       <figure class="shotframe rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Why-Choose-Us_-Futuristic-Tech-Showcase.png" alt="Why Choose Verdex — Futuristic Tech Showcase" loading="lazy">
+        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Developer-Workspace-Dashboard.png" alt="Why Choose Verdex — Neon Developer Workspace" loading="lazy">
       </figure>
     </div>
   </section>
