@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   <section class="sec band svc-detail-sec" id="web-development">
     <div class="wrap svc-detail">
       <figure class="svc-img-frame rv">
-        <img src="<?php echo esc_url( verdex_image_url( 'svc-web.jpg' ) ); ?>" alt="Web development" onerror="this.style.display='none'" loading="lazy">
+        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Web development" loading="lazy">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           <span>Web Development</span>
@@ -125,7 +125,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </a>
       </div>
       <figure class="svc-img-frame rv">
-        <img src="<?php echo esc_url( verdex_image_url( 'svc-seo.jpg' ) ); ?>" alt="SEO" onerror="this.style.display='none'" loading="lazy">
+        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="SEO" loading="lazy">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           <span>SEO</span>
@@ -138,7 +138,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   <section class="sec band svc-detail-sec" id="digital-marketing">
     <div class="wrap svc-detail">
       <figure class="svc-img-frame rv">
-        <img src="<?php echo esc_url( verdex_image_url( 'svc-marketing.jpg' ) ); ?>" alt="Digital marketing" onerror="this.style.display='none'" loading="lazy">
+        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="Digital marketing" loading="lazy">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           <span>Digital Marketing</span>
@@ -185,7 +185,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </a>
       </div>
       <figure class="svc-img-frame rv">
-        <img src="<?php echo esc_url( verdex_image_url( 'svc-design.jpg' ) ); ?>" alt="Graphic design" onerror="this.style.display='none'" loading="lazy">
+        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="Graphic design" loading="lazy">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
           <span>Graphic Design</span>
