@@ -322,7 +322,7 @@ p{margin:0}
 .svc-img-frame{position:relative;border-radius:22px;overflow:hidden;
   border:1px solid var(--line);background:var(--surface);
   box-shadow:inset 0 1px 0 var(--lift),var(--shadow);aspect-ratio:4/3;display:grid}
-.svc-img-frame img{grid-area:1/1;width:100%;height:100%;object-fit:cover;display:block}
+.svc-img-frame img{grid-area:1/1;width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:1}
 .svc-img-ph{grid-area:1/1;display:grid;place-content:center;justify-items:center;gap:14px;
   color:var(--mut);text-align:center;padding:24px;
   background:
