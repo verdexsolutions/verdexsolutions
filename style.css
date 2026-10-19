@@ -277,7 +277,7 @@ p{margin:0}
 .wp p{font-size:.93rem;color:var(--mut)}
 .shotframe{position:relative;margin:0;overflow:hidden;border:1px solid var(--line);
   border-radius:22px;background:var(--surface);box-shadow:inset 0 1px 0 var(--lift),var(--shadow);
-  aspect-ratio:2/1;max-width:100%;display:grid}
+  aspect-ratio:4/3;max-width:100%;display:grid}
 .shotframe img{grid-area:1/1;width:100%;height:100%;object-fit:cover;display:block}
 .shotframe-ph{grid-area:1/1;display:grid;place-content:center;justify-items:center;gap:12px;
   color:var(--mut);text-align:center;padding:24px;
