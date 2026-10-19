@@ -52,14 +52,8 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
       </div>
 
-      <!-- Drop a real photo at /assets/images/why.jpg — your desk, a build in progress,
-           or a screen showing a site you shipped. The placeholder shows until it exists. -->
       <figure class="shotframe rv">
-        <img src="<?php echo esc_url( verdex_image_url( 'why.jpg' ) ); ?>" alt="A Verdex build in progress" onerror="this.remove()" loading="lazy">
-        <div class="shotframe-ph" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="14" rx="2.5"/><circle cx="12" cy="12.5" r="3.6"/><path d="M8 5.5 9.3 3h5.4l1.3 2.5"/></svg>
-          <span>Your photo goes here</span>
-        </div>
+        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Why-Choose-Us_-Tech-Driven-Excellence.png" alt="Tech-Driven Excellence — Why Choose Verdex" loading="lazy">
       </figure>
     </div>
   </section>
