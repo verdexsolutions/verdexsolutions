@@ -16,8 +16,7 @@ Tags: one-column, custom-menu, featured-images, translation-ready
 
 /* Layout: green-black with lifted, top-lit surfaces; depth comes from layered
    washes and a 1px highlight on every card edge, not from outlines on flat black.
-   Fraunces carries the three statements that matter and nothing else; Hanken Grotesk
-   runs all UI and body text. Emerald is the only accent. Every section funnels to the
+   Montserrat runs everything: bold for headings, italic for the green accent words. Emerald is the only accent. Every section funnels to the
    three-step quote form, which is the page's real content. */
 :root{
   /* Color: dark is the base */
@@ -44,8 +43,8 @@ Tags: one-column, custom-menu, featured-images, translation-ready
   --shadow:0 24px 60px -28px rgba(0,0,0,.85);
 
   /* Type */
-  --disp:"Fraunces",Georgia,"Times New Roman",serif;
-  --ui:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --disp:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --ui:"Montserrat","Helvetica Neue",Arial,sans-serif;
 
   /* This page commits to one look: dark only, in every viewer's theme. */
   color-scheme:dark;

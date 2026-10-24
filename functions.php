@@ -51,7 +51,7 @@ add_action( 'after_setup_theme', 'verdex_setup' );
 function verdex_assets() {
 	wp_enqueue_style(
 		'verdex-fonts',
-		'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap',
+		'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap',
 		array(),
 		null
 	);
