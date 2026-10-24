@@ -4,7 +4,7 @@ Theme URI: https://verdexwebsolutions.com/
 Author: Verdex Web Solutions
 Author URI: https://verdexwebsolutions.com/
 Description: Dark, conversion-focused theme for Verdex Web Solutions. Website development, SEO, digital marketing and graphic design.
-Version: 1.0.1
+Version: 1.0.2
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
@@ -448,19 +448,38 @@ input:focus,select:focus,textarea:focus{border-color:var(--acc);outline:none;box
 input.bad,textarea.bad{border-color:var(--bad)}
 textarea{resize:vertical;min-height:104px}
 .picks{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.pick{position:relative;min-width:0;display:block;text-transform:none;letter-spacing:normal}
-.pick input{position:absolute;opacity:0;width:0;height:0}
-.pick span{display:flex;align-items:center;gap:11px;cursor:pointer;height:100%;
+/* Service picks: CF7 renders [checkbox needs use_label_element] as
+   wrap > control > .wpcf7-list-item > label > input + .wpcf7-list-item-label */
+.qform .picks .wpcf7-form-control-wrap,.picks .wpcf7-checkbox{display:contents}
+.picks .wpcf7-list-item{display:block;margin:0;min-width:0}
+.picks .wpcf7-list-item label{position:relative;display:block;height:100%;text-transform:none;letter-spacing:normal}
+.picks .wpcf7-list-item input{position:absolute;opacity:0;width:0;height:0}
+.picks .wpcf7-list-item-label{display:flex;align-items:center;gap:11px;cursor:pointer;height:100%;
   background:var(--bg);border:1px solid var(--line);border-radius:13px;padding:14px 15px;
   font-size:.92rem;font-weight:700;letter-spacing:-.01em;text-transform:none;color:var(--fg-2);
   transition:border-color .2s,background .2s,color .2s}
-.pick span::before{content:"";width:17px;height:17px;border-radius:6px;flex:none;
+.picks .wpcf7-list-item-label::before{content:"";width:17px;height:17px;border-radius:6px;flex:none;
   border:1.5px solid var(--line);transition:background .2s,border-color .2s}
-.pick input:checked+span{border-color:var(--acc);background:var(--wash);color:var(--fg)}
-.pick input:checked+span::before{background:var(--acc);border-color:var(--acc);
+.picks input:checked+.wpcf7-list-item-label{border-color:var(--acc);background:var(--wash);color:var(--fg)}
+.picks input:checked+.wpcf7-list-item-label::before{background:var(--acc);border-color:var(--acc);
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2304120B' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7'/%3E%3C/svg%3E");
   background-size:12px;background-position:center;background-repeat:no-repeat}
-.pick input:focus-visible+span{outline:2px solid var(--acc);outline-offset:2px}
+.picks input:focus-visible+.wpcf7-list-item-label{outline:2px solid var(--acc);outline-offset:2px}
+.picks .wpcf7-not-valid-tip{grid-column:1/-1}
+
+/* Contact Form 7 states */
+.qform .wpcf7-form-control-wrap{display:block}
+.qform textarea{height:120px}
+.qform .wpcf7-not-valid{border-color:var(--bad)}
+.qform .wpcf7-not-valid-tip{display:block;margin-top:6px;font-size:.82rem;font-weight:600;color:var(--bad)}
+.qform .wpcf7-spinner{display:none}
+.wpcf7-form.submitting #send{opacity:.6;pointer-events:none}
+.qform .wpcf7-response-output{margin:0;padding:12px 14px;border-radius:12px;font-size:.88rem;font-weight:600;
+  border:1px solid var(--line);color:var(--fg-2)}
+.wpcf7 form.invalid .wpcf7-response-output,.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.failed .wpcf7-response-output,.wpcf7 form.aborted .wpcf7-response-output,
+.wpcf7 form.spam .wpcf7-response-output{border-color:var(--bad);color:var(--bad)}
+.wpcf7 form.sent .wpcf7-response-output{display:none}
 .nav-btns{display:flex;gap:11px;align-items:center}
 .nav-btns .btn{flex:1}
 .err{font-size:.84rem;font-weight:600;color:var(--bad)}

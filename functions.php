@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'VERDEX_VERSION', '1.0.1' );
+define( 'VERDEX_VERSION', '1.0.2' );
 
 /**
  * Theme supports and menu locations.
@@ -195,6 +195,33 @@ function verdex_phone_link( $type = 'tel' ) {
 	$attrs = 'whatsapp' === $type ? ' target="_blank" rel="noopener"' : '';
 
 	printf( '<a href="%1$s"%2$s>%3$s</a>', esc_url( $href, array( 'tel', 'https' ) ), $attrs, esc_html( verdex_phone() ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- $attrs is a fixed string.
+}
+
+/**
+ * Three-step quote form, rendered by Contact Form 7.
+ *
+ * The form lives in CF7 under the title "Verdex quote form"; its template is
+ * kept in cf7/quote-form.txt. Auto-paragraphs are switched off while it renders
+ * so CF7 does not wrap the step markup in <p> and <br> tags.
+ */
+function verdex_quote_form() {
+	$html = '';
+	if ( shortcode_exists( 'contact-form-7' ) ) {
+		add_filter( 'wpcf7_autop_or_not', '__return_false' );
+		$html = do_shortcode( '[contact-form-7 title="Verdex quote form" html_class="qform-cf7"]' );
+		remove_filter( 'wpcf7_autop_or_not', '__return_false' );
+	}
+
+	if ( false === strpos( $html, 'wpcf7-form' ) ) {
+		echo '<div class="card qform"><div class="stepbox"><h3>' . esc_html__( 'Send us your brief', 'verdex' ) . '</h3><p class="fnote">';
+		esc_html_e( 'Email what you need and when you would like it live, and a fixed quote comes back inside 24 hours:', 'verdex' );
+		echo ' ';
+		verdex_email_link();
+		echo '</p></div></div>';
+		return;
+	}
+
+	echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- rendered by Contact Form 7.
 }
 
 /**

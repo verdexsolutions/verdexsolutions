@@ -1,0 +1,70 @@
+<div class="card qform" id="brief">
+<div class="bar">
+<div class="bar-top"><b id="stepName">Step 1 of 3 &middot; What you need</b><span id="stepTime">about a minute</span></div>
+<div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+</div>
+
+<div class="stepbox" id="s1" data-step="1">
+<h3>What do you need help with?</h3>
+<div class="picks" role="group" aria-label="Services needed">[checkbox* needs use_label_element "New website" "Online store" "SEO" "Ads" "Logo and brand" "Care plan"]</div>
+<div class="field">
+<label for="f-when">When would you like it live?</label>
+[select when id:f-when default:2 "As soon as possible" "In the next month or two" "Later this year" "Still deciding"]
+</div>
+<p class="err" id="e1" hidden>Pick at least one so we know what to quote.</p>
+<div class="nav-btns">
+<button type="button" class="btn btn--acc" data-next="2">Continue <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+</div>
+</div>
+
+<div class="stepbox" id="s2" data-step="2" hidden>
+<h3>Tell us about the project</h3>
+<div class="field">
+<label for="f-co">Company</label>
+[text company id:f-co autocomplete:organization placeholder "Hart Joinery"]
+</div>
+<div class="field">
+<label for="f-site">Current website, if you have one</label>
+[text website id:f-site placeholder "hartjoinery.co.uk"]
+</div>
+<div class="field">
+<label for="f-msg">What is the site not doing for you?</label>
+[textarea message id:f-msg placeholder "Enquiries dried up after the last rebuild, and the shop pages take about ten seconds on mobile."]
+</div>
+<div class="nav-btns">
+<button type="button" class="btn btn--ghost" data-back="1">Back</button>
+<button type="button" class="btn btn--acc" data-next="3">Continue <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+</div>
+</div>
+
+<div class="stepbox" id="s3" data-step="3" hidden>
+<h3>Where do we send the quote?</h3>
+<div class="row2">
+<div class="field">
+<label for="f-name">Your name</label>
+[text* your-name id:f-name autocomplete:name placeholder "Jane Hart"]
+</div>
+<div class="field">
+<label for="f-email">Email</label>
+[email* your-email id:f-email autocomplete:email placeholder "jane@company.com"]
+</div>
+</div>
+<div class="field">
+<label for="f-phone">WhatsApp or phone, if you prefer that</label>
+[tel phone id:f-phone autocomplete:tel placeholder "+44 7700 900123"]
+</div>
+[response]
+<div class="nav-btns">
+<button type="button" class="btn btn--ghost" data-back="2">Back</button>
+<button type="submit" class="btn btn--acc wpcf7-submit" id="send">Send my brief <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+</div>
+<p class="fnote">No newsletter, no reselling your details. Just a reply about your project.</p>
+</div>
+
+<div class="done" id="done" hidden>
+<span class="done-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"/></svg></span>
+<h3 id="doneTitle">Brief sent</h3>
+<p id="doneText"></p>
+<div class="recap" id="recap"></div>
+</div>
+</div>

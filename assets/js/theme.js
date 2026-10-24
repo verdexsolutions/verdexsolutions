@@ -94,8 +94,8 @@
   }
   slider("revs", ".rev", "rDots", "rPrev", "rNext");
 
-  /* ---- three-step quote form ---- */
-  var form = $("brief");
+  /* ---- three-step quote form (Contact Form 7) ---- */
+  var card = $("brief"), form = card && card.closest("form.wpcf7-form");
   if(form){
     var names = {1:"Step 1 of 3 &middot; What you need", 2:"Step 2 of 3 &middot; The project", 3:"Step 3 of 3 &middot; Your details"};
     var times = {1:"about a minute", 2:"halfway there", 3:"last one"};
@@ -103,57 +103,80 @@
     function show(n){
       at = n;
       $("s1").hidden = n !== 1; $("s2").hidden = n !== 2; $("s3").hidden = n !== 3;
+      $("done").hidden = true;
       $("barFill").style.width = (n / 3 * 100) + "%";
       $("stepName").innerHTML = names[n];
       $("stepTime").textContent = times[n];
     }
     function picked(){
       var out = [];
-      Array.prototype.forEach.call(document.querySelectorAll(".pick input:checked"), function(i){ out.push(i.value); });
+      Array.prototype.forEach.call(card.querySelectorAll(".picks input:checked"), function(i){ out.push(i.value); });
       return out;
     }
-    Array.prototype.forEach.call(document.querySelectorAll("[data-next]"), function(b){
-      b.addEventListener("click", function(){
-        var to = parseInt(b.getAttribute("data-next"), 10);
-        if(to === 2 && picked().length === 0){ $("e1").hidden = false; return; }
-        $("e1").hidden = true;
-        show(to);
-        form.scrollIntoView({behavior: reduce ? "auto" : "smooth", block:"center"});
-      });
+    function next(to){
+      if(to === 2 && picked().length === 0){ $("e1").hidden = false; return; }
+      $("e1").hidden = true;
+      show(to);
+      card.scrollIntoView({behavior: reduce ? "auto" : "smooth", block:"center"});
+    }
+    Array.prototype.forEach.call(card.querySelectorAll("[data-next]"), function(b){
+      b.addEventListener("click", function(){ next(parseInt(b.getAttribute("data-next"), 10)); });
     });
-    Array.prototype.forEach.call(document.querySelectorAll("[data-back]"), function(b){
+    Array.prototype.forEach.call(card.querySelectorAll("[data-back]"), function(b){
       b.addEventListener("click", function(){ show(parseInt(b.getAttribute("data-back"), 10)); });
     });
-    form.addEventListener("submit", function(e){
-      e.preventDefault();
-      var name = $("f-name"), email = $("f-email"), err = $("e3");
+    card.addEventListener("change", function(e){
+      if(e.target.closest(".picks") && picked().length) $("e1").hidden = true;
+    });
+    // Enter in an early step moves forward instead of sending a half-filled brief.
+    form.addEventListener("keydown", function(e){
+      if(e.key === "Enter" && at < 3 && e.target.tagName === "INPUT"){
+        e.preventDefault(); next(at + 1);
+      }
+    });
+    // Runs before Contact Form 7's own submit handler, so an incomplete
+    // step 3 is caught here without a round trip to the server.
+    document.addEventListener("submit", function(e){
+      if(e.target !== form) return;
+      if(at !== 3){ e.preventDefault(); e.stopPropagation(); next(at + 1); return; }
+      var name = $("f-name"), email = $("f-email");
       name.classList.remove("bad"); email.classList.remove("bad");
       if(!name.value.trim()){
-        name.classList.add("bad"); err.textContent = "Add your name so we know who we are replying to.";
-        err.hidden = false; name.focus(); return;
+        e.preventDefault(); e.stopPropagation();
+        name.classList.add("bad"); name.focus(); return;
       }
       if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)){
-        email.classList.add("bad"); err.textContent = "That email address looks incomplete.";
-        err.hidden = false; email.focus(); return;
+        e.preventDefault(); e.stopPropagation();
+        email.classList.add("bad"); email.focus();
       }
-      err.hidden = true;
-      var want = picked();
-      var first = name.value.trim().split(/\s+/)[0];
+    }, true);
+    // Server-side validation failed: jump to the step holding the first bad field.
+    form.addEventListener("wpcf7invalid", function(){
+      var bad = form.querySelector(".wpcf7-not-valid");
+      var box = bad && bad.closest(".stepbox");
+      if(box) show(parseInt(box.getAttribute("data-step"), 10));
+    });
+    form.addEventListener("wpcf7mailsent", function(e){
+      var v = {}, needs = [];
+      (e.detail.inputs || []).forEach(function(i){
+        if(i.name === "needs[]") needs.push(i.value); else v[i.name] = i.value;
+      });
+      var first = String(v["your-name"] || "").trim().split(/\s+/)[0];
       $("s1").hidden = true; $("s2").hidden = true; $("s3").hidden = true;
       $("barFill").style.width = "100%";
-      $("stepName").innerHTML = "Brief complete";
+      $("stepName").innerHTML = "Brief sent";
       $("stepTime").textContent = "thanks";
-      $("doneTitle").textContent = "Thanks, " + first + ".";
-      $("doneText").textContent = "Your brief is ready. Connect this form to your inbox and it will land there, with a quote back inside 24 hours.";
+      $("doneTitle").textContent = first ? "Thanks, " + first + "." : "Thanks.";
+      $("doneText").textContent = "Your brief is in. A fixed quote comes back to " + (v["your-email"] || "your inbox") + " inside 24 hours.";
       var rows = [
-        ["Needs", want.join(", ") || "Not specified"],
-        ["Timing", $("f-when").value],
-        ["Company", $("f-co").value.trim() || "—"],
-        ["Reply to", email.value.trim()]
+        ["Needs", needs.join(", ") || "Not specified"],
+        ["Timing", v.when || "—"],
+        ["Company", String(v.company || "").trim() || "—"],
+        ["Reply to", v["your-email"] || "—"]
       ];
       var html = "";
       for(var i = 0; i < rows.length; i++){
-        html += '<div><em>' + rows[i][0] + '</em><span>' + String(rows[i][1]).replace(/</g,"&lt;") + '</span></div>';
+        html += '<div><em>' + rows[i][0] + '</em><span>' + String(rows[i][1]).replace(/&/g,"&amp;").replace(/</g,"&lt;") + '</span></div>';
       }
       $("recap").innerHTML = html;
       $("done").hidden = false;
