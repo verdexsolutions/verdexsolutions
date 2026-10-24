@@ -574,10 +574,35 @@ footer{background:var(--bg);border-top:1px solid var(--line-2);padding-block:cla
 .alignleft{float:left;margin:0 1.5em 1em 0}.alignright{float:right;margin:0 0 1em 1.5em}
 .aligncenter{display:block;margin-inline:auto}
 
+/* ---------- Nav dropdown ---------- */
+.nav-links .menu-item-has-children{position:relative}
+.nav-links .sub-menu{
+  display:none;position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);
+  background:var(--surface-2);border:1px solid var(--line);border-radius:14px;
+  padding:8px;min-width:200px;z-index:200;white-space:nowrap;
+  box-shadow:0 8px 32px rgba(0,0,0,.45)
+}
+.nav-links .sub-menu::before{
+  content:'';position:absolute;top:-6px;left:50%;transform:translateX(-50%);
+  width:12px;height:6px;background:var(--surface-2);
+  clip-path:polygon(50% 0%,0% 100%,100% 100%)
+}
+.nav-links .menu-item-has-children:hover .sub-menu,
+.nav-links .menu-item-has-children:focus-within .sub-menu{display:block}
+.nav-links .sub-menu li{list-style:none;margin:0}
+.nav-links .sub-menu a{
+  display:block;padding:10px 14px;font-size:.85rem;font-weight:600;
+  color:var(--fg-2);text-decoration:none;border-radius:8px;transition:background .15s,color .15s
+}
+.nav-links .sub-menu a:hover{background:color-mix(in srgb,var(--acc) 10%,transparent);color:var(--acc)}
+/* Mobile drawer sub-menu: expand inline */
+#drawer .sub-menu{display:flex;flex-direction:column;padding-left:16px;border-left:2px solid var(--line)}
+#drawer .sub-menu a{font-size:.9rem;padding:10px 0;border-bottom:1px solid var(--line-2)}
+
 /* ---------- Service sub-pages ---------- */
 .svcp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line)}
 .svcp-stat{background:var(--surface);padding:28px 24px;text-align:center}
-.svcp-stat strong{display:block;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:var(--acc);line-height:1.1}
+.svcp-stat strong{display:block;font-size:clamp(1.4rem,2.6vw,2rem);font-weight:800;color:var(--acc);line-height:1.2;white-space:nowrap}
 .svcp-stat span{display:block;font-size:.82rem;color:var(--fg-2);margin-top:6px;line-height:1.4}
 
 .svcp-head{max-width:680px;margin-bottom:clamp(32px,4vw,52px)}

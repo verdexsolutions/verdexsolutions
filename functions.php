@@ -157,13 +157,36 @@ function verdex_menu_items( $class ) {
 		'about'     => __( 'About', 'verdex' ),
 	);
 
+	$service_subs = array(
+		'web-development'   => __( 'Web Development', 'verdex' ),
+		'seo'               => __( 'SEO', 'verdex' ),
+		'digital-marketing' => __( 'Digital Marketing', 'verdex' ),
+		'graphic-design'    => __( 'Graphic Design', 'verdex' ),
+	);
+
 	printf( '<ul class="%s">', esc_attr( $class ) );
 	foreach ( $items as $slug => $label ) {
-		printf(
-			'<li class="menu-item"><a href="%1$s">%2$s</a></li>',
-			esc_url( verdex_page_url( $slug ) ),
-			esc_html( $label )
-		);
+		if ( 'services' === $slug ) {
+			printf(
+				'<li class="menu-item menu-item-has-children"><a href="%1$s">%2$s</a><ul class="sub-menu">',
+				esc_url( verdex_page_url( $slug ) ),
+				esc_html( $label )
+			);
+			foreach ( $service_subs as $sub_slug => $sub_label ) {
+				printf(
+					'<li class="menu-item"><a href="%1$s">%2$s</a></li>',
+					esc_url( verdex_page_url( $sub_slug ) ),
+					esc_html( $sub_label )
+				);
+			}
+			echo '</ul></li>';
+		} else {
+			printf(
+				'<li class="menu-item"><a href="%1$s">%2$s</a></li>',
+				esc_url( verdex_page_url( $slug ) ),
+				esc_html( $label )
+			);
+		}
 	}
 	echo '</ul>';
 }

@@ -36,7 +36,7 @@
               'container'      => 'div',
               'container_class'=> 'nav-links',
               'menu_class'     => 'nav-menu',
-              'depth'          => 1,
+              'depth'          => 2,
               'fallback_cb'    => 'verdex_primary_fallback',
           )
       );
