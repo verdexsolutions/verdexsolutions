@@ -437,7 +437,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="close rv">
         <span class="kicker">Next step</span>
         <h2>Your competitors are <span class="it">one search away</span>.</h2>
-        <p>Get a site that shows up first and gives people a reason to call you.</p>
+        <p style="max-width:none">Get a site that shows up first and gives people a reason to call you.</p>
         <a href="<?php echo esc_url( verdex_page_url( 'contact' ) ); ?>" class="btn btn--acc">Get my fixed quote
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
         </a>
