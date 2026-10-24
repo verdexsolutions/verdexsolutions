@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </ul>
         <div class="qcontact">
           <div class="qrow"><em>Email</em> <?php verdex_email_link(); ?></div>
-          <div class="qrow"><em>WhatsApp</em> <?php verdex_phone_link(); ?></div>
+          <div class="qrow"><em>Phone</em> <?php verdex_phone_link(); ?></div>
         </div>
       </div>
 
