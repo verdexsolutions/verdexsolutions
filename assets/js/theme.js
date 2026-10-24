@@ -184,5 +184,25 @@
     });
   }
 
+  /* ---- post contents list ---- */
+  var toc = document.querySelector(".post-toc");
+  if(toc){
+    var det = toc.querySelector("details");
+    if(det && window.innerWidth < 900) det.removeAttribute("open");
+    var links = toc.querySelectorAll("a"), map = {};
+    Array.prototype.forEach.call(links, function(a){ map[a.getAttribute("href").slice(1)] = a; });
+    if("IntersectionObserver" in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting && map[en.target.id]){
+            Array.prototype.forEach.call(links, function(l){ l.classList.remove("on"); });
+            map[en.target.id].classList.add("on");
+          }
+        });
+      }, {rootMargin:"-20% 0px -70% 0px"});
+      Object.keys(map).forEach(function(id){ var h = document.getElementById(id); if(h) io.observe(h); });
+    }
+  }
+
   var yr = $("yr"); if(yr) yr.textContent = new Date().getFullYear();
 })();

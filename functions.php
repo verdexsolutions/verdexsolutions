@@ -433,3 +433,5 @@ function verdex_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'verdex_customize_register' );
 
 require_once get_template_directory() . '/inc/schema.php';
+
+require_once get_template_directory() . '/inc/blog.php';

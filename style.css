@@ -691,13 +691,65 @@ footer{background:var(--bg);border-top:1px solid var(--line-2);padding-block:cla
 .ilink:hover{color:var(--acc-2)}
 a.svc-card__link:hover{color:var(--acc-2)}
 
-/* Blog post body */
-.entry>*+*{margin-top:1.1em}
-.entry h2{font-family:var(--disp);font-weight:700;font-size:clamp(1.45rem,2.6vw,1.9rem);letter-spacing:-.02em;
-  line-height:1.2;color:var(--fg);margin-top:2.1em}
+/* Single post */
+.post-hero{padding-top:clamp(124px,14vw,176px);padding-bottom:clamp(40px,5vw,64px)}
+.post-hero-in{max-width:860px;text-align:center;display:grid;justify-items:center;gap:22px}
+.post-crumbs{display:flex;gap:10px;align-items:center;font-size:.76rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--mut)}
+.post-crumbs a{color:var(--acc);text-decoration:none}
+.post-crumbs a:hover{color:var(--acc-2)}
+.post-title{font-size:clamp(2.3rem,5.4vw,4.1rem);line-height:1.04}
+.post-dek{font-size:clamp(1.05rem,1.6vw,1.22rem);line-height:1.6;color:var(--fg-2);max-width:60ch}
+.post-meta{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 12px;
+  font-size:.9rem;color:var(--mut);margin-top:4px}
+.post-meta b{color:var(--fg);font-weight:700}
+.post-dot{width:4px;height:4px;border-radius:50%;background:var(--line)}
+.post-av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex:none;
+  background:var(--wash);border:1px solid var(--ring);color:var(--acc);font-family:var(--disp);font-weight:700}
+.post-av--lg{width:54px;height:54px;font-size:1.3rem}
+
+.post-body{padding-top:clamp(48px,6vw,84px)}
+.post-grid{display:grid;grid-template-columns:250px minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.post-grid--solo{grid-template-columns:minmax(0,1fr)}
+.post-main{max-width:70ch;width:100%;display:grid;gap:40px}
+.post-grid--solo .post-main{margin:0 auto}
+
+.post-toc{position:sticky;top:110px}
+.post-toc details{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:18px 18px 14px}
+.post-toc summary{list-style:none;cursor:pointer;font-size:.74rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--acc)}
+.post-toc summary::-webkit-details-marker{display:none}
+.post-toc ol{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:2px}
+.post-toc a{display:block;padding:7px 10px;border-radius:9px;font-size:.88rem;line-height:1.4;
+  color:var(--fg-2);text-decoration:none;transition:background .2s,color .2s}
+.post-toc a:hover,.post-toc a.on{background:var(--wash);color:var(--fg)}
+
+/* Post body text */
+.entry{font-size:1.08rem;line-height:1.8;color:var(--fg-2)}
+.entry>*+*{margin-top:1.15em}
+.entry>p:first-child{font-size:1.2rem;line-height:1.7;color:var(--fg)}
+.entry h2{font-family:var(--disp);font-weight:700;font-size:clamp(1.5rem,2.6vw,1.95rem);letter-spacing:-.02em;
+  line-height:1.2;color:var(--fg);margin-top:2.2em;padding-top:1.4em;border-top:1px solid var(--line-2);
+  scroll-margin-top:110px}
 .entry h3{font-size:1.15rem;font-weight:800;color:var(--fg);margin-top:1.8em}
-.entry p,.entry li{color:var(--fg-2)}
 .entry ul,.entry ol{padding-left:1.3em;display:grid;gap:.5em}
 .entry strong{color:var(--fg)}
 .entry a{color:var(--acc);font-weight:600;text-decoration:none}
 .entry a:hover{color:var(--acc-2)}
+.entry blockquote{margin-left:0;padding:4px 0 4px 20px;border-left:3px solid var(--acc);color:var(--fg)}
+
+.post-author{display:flex;gap:18px;align-items:flex-start;padding:24px;border:1px solid var(--line);
+  border-radius:18px;background:var(--surface)}
+.post-author b{display:block;color:var(--fg);font-size:1.02rem;margin-bottom:4px}
+.post-author p{font-size:.94rem;line-height:1.6;color:var(--mut)}
+.post-back{display:inline-flex;align-items:center;gap:8px;justify-self:start;font-weight:700;font-size:.92rem;
+  color:var(--acc);text-decoration:none}
+.post-back svg{width:18px;height:18px;transition:transform .2s}
+.post-back:hover svg{transform:translateX(-3px)}
+
+@media (max-width:900px){
+  .post-grid{grid-template-columns:minmax(0,1fr)}
+  .post-toc{position:static}
+  .post-toc details:not([open]){padding-bottom:18px}
+  .post-main{margin:0 auto}
+}
