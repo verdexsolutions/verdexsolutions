@@ -10,8 +10,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
   <!-- ============ HERO ============ -->
-  <section class="sec hero">
-    <div class="aura" aria-hidden="true"><span class="orb orb--a"></span><span class="orb orb--b"></span></div>
+  <section class="sec hero hero--photo">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="<?php echo esc_url( verdex_image_url( 'hero-workspace.webp' ) ); ?>"
+        srcset="<?php echo esc_url( verdex_image_url( 'hero-workspace-900.webp' ) ); ?> 900w, <?php echo esc_url( verdex_image_url( 'hero-workspace.webp' ) ); ?> 1536w"
+        sizes="100vw" width="1536" height="1024" alt="" fetchpriority="high" decoding="async">
+    </div>
     <div class="wrap">
       <div class="hero-grid">
 
@@ -38,31 +42,6 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"/></svg> No lock-in contracts</span>
             <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"/></svg> Fixed quote inside 24 hours</span>
           </div>
-        </div>
-
-        <!-- Hero orbit: the four services circling the mark. Decorative only. -->
-        <div class="orbit up up2" aria-hidden="true">
-          <span class="ring ring--out"></span>
-          <span class="ring ring--mid"></span>
-
-          <span class="core">
-            <span class="core-g">V</span>
-            <b>VERDEX</b>
-            <em>Web Solutions</em>
-          </span>
-
-          <span class="sat sat--1"><i title="Website development">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6 2.5 12 8 18"/><path d="m16 6 5.5 6L16 18"/><path d="M13.5 4.5 10.5 19.5"/></svg>
-          </i></span>
-          <span class="sat sat--2"><i title="SEO">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/><path d="M7.5 11.5 10 9l2 1.8 3-3.8"/></svg>
-          </i></span>
-          <span class="sat sat--3"><i title="Digital marketing">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5v5a1 1 0 0 0 1 1h3l6 4.5V4L7.5 8.5h-3a1 1 0 0 0-1 1Z"/><path d="M17.5 8.5a5 5 0 0 1 0 7"/><path d="M20 6a8.5 8.5 0 0 1 0 12"/></svg>
-          </i></span>
-          <span class="sat sat--4"><i title="Graphic design">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5a8.5 8.5 0 1 0 0 17h1.8a2.2 2.2 0 0 0 1.6-3.7 2.2 2.2 0 0 1 1.6-3.7h1.4A3.6 3.6 0 0 0 22 9.4C21.3 6 17.1 3.5 12 3.5Z"/><circle cx="8" cy="10" r="1.1"/><circle cx="12" cy="7.5" r="1.1"/><circle cx="16" cy="10" r="1.1"/></svg>
-          </i></span>
         </div>
 
       </div>
