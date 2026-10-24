@@ -53,16 +53,6 @@
     if(open) open.nextElementSibling.style.height = open.nextElementSibling.firstElementChild.offsetHeight + "px";
   });
 
-  /* ---- copy buttons ---- */
-  Array.prototype.forEach.call(document.querySelectorAll(".copy"), function(b){
-    b.addEventListener("click", function(){
-      var old = b.textContent;
-      var ok = function(){ b.textContent = "Copied"; setTimeout(function(){ b.textContent = old; }, 1600); };
-      var no = function(){ b.textContent = "Select it"; setTimeout(function(){ b.textContent = old; }, 1600); };
-      try{ navigator.clipboard.writeText(b.getAttribute("data-copy")).then(ok, no); }catch(e){ no(); }
-    });
-  });
-
   /* ---- sliders ---- */
   function slider(railId, cardSel, dotsId, prevId, nextId){
     var rail = $(railId), dots = $(dotsId), prev = $(prevId), next = $(nextId);
