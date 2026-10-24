@@ -145,7 +145,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6 2.5 12 8 18"/><path d="m16 6 5.5 6L16 18"/><path d="M13.5 4.5 10.5 19.5"/></svg></span>
             <h3>Website development</h3>
           </div>
-          <p>Custom WordPress themes, WooCommerce stores and static builds in Astro. No page builders stacked on each other, no plugin for every small thing — just clean code and an editor your team can actually use.</p>
+          <p>Custom WordPress themes, WooCommerce stores and static builds in Astro. No page builders stacked on each other, no plugin for every small thing. Just clean code and an editor your team can actually use.</p>
           <ul>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Staging link from week one</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Editable sections, not locked layouts</li>
@@ -237,7 +237,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
 
       <figure class="shotframe rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Developer-Workspace-Dashboard.png" alt="Why Choose Verdex — Neon Developer Workspace" loading="lazy">
+        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Developer-Workspace-Dashboard.png" alt="Why choose Verdex: developer workspace with glowing code panels" loading="lazy">
       </figure>
     </div>
   </section>

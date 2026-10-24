@@ -14,13 +14,13 @@ Text Domain: verdex
 Tags: one-column, custom-menu, featured-images, translation-ready
 */
 
-/* Layout: green-black with lifted, top-lit surfaces — depth comes from layered
+/* Layout: green-black with lifted, top-lit surfaces; depth comes from layered
    washes and a 1px highlight on every card edge, not from outlines on flat black.
    Fraunces carries the three statements that matter and nothing else; Hanken Grotesk
    runs all UI and body text. Emerald is the only accent. Every section funnels to the
    three-step quote form, which is the page's real content. */
 :root{
-  /* Color — dark is the base */
+  /* Color: dark is the base */
   --bg:#080A09;
   --bg-2:#0B0F0D;
   --surface:#0E1210;

@@ -17,25 +17,25 @@ $verdex_services = array(
 	'web-development'   => array(
 		'01',
 		'Web Development',
-		'Custom WordPress themes, WooCommerce stores and Astro builds — fast, editable, and built to last.',
+		'Custom WordPress themes, WooCommerce stores and Astro builds that are fast, editable and built to last.',
 		'<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>',
 	),
 	'seo'               => array(
 		'02',
 		'SEO',
-		'Technical audits, on-page fixes and content that earns rankings — measured monthly with a report you can read.',
+		'Technical audits, on-page fixes and content that earns rankings, measured monthly with a report you can read.',
 		'<circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>',
 	),
 	'digital-marketing' => array(
 		'03',
 		'Digital Marketing',
-		'Google and Meta campaigns with landing pages included — ad spend stays in your account, results tracked daily.',
+		'Google and Meta campaigns with landing pages included. Ad spend stays in your account, results tracked daily.',
 		'<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
 	),
 	'graphic-design'    => array(
 		'04',
 		'Graphic Design',
-		'Logos, brand systems and every file format your printer and social manager will ever ask for — source files included.',
+		'Logos, brand systems and every file format your printer and social manager will ever ask for, with source files included.',
 		'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/>',
 	),
 );

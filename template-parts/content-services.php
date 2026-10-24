@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="wrap">
       <span class="kicker">Services</span>
       <h1 style="margin-top:18px;font-size:clamp(2.8rem,6vw,4.8rem);max-width:16ch">Everything your business needs, <span class="it">one team</span>.</h1>
-      <p class="lead" style="margin-top:20px;max-width:52ch">Web development, SEO, digital marketing and graphic design — handled by the same people from brief to handover. See the results in <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>">our portfolio</a>, or <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'about' ) ); ?>">meet the team</a>.</p>
+      <p class="lead" style="margin-top:20px;max-width:52ch">Web development, SEO, digital marketing and graphic design, handled by the same people from brief to handover. See the results in <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>">our portfolio</a>, or <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'about' ) ); ?>">meet the team</a>.</p>
       <nav class="svcs-nav">
         <a href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">Web Development</a>
         <a href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">SEO</a>
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </span>
           <h3>Web Development</h3>
-          <p>Custom WordPress themes, WooCommerce stores and Astro builds — fast, editable, and built to last.</p>
+          <p>Custom WordPress themes, WooCommerce stores and Astro builds that are fast, editable and built to last.</p>
           <span class="svc-card__link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </a>
 
@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           </span>
           <h3>SEO</h3>
-          <p>Technical audits, on-page fixes and content that earns rankings — measured monthly with a report you can read.</p>
+          <p>Technical audits, on-page fixes and content that earns rankings, measured monthly with a report you can read.</p>
           <span class="svc-card__link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </a>
 
@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </span>
           <h3>Digital Marketing</h3>
-          <p>Google and Meta campaigns with landing pages included — ad spend stays in your account, results tracked daily.</p>
+          <p>Google and Meta campaigns with landing pages included. Ad spend stays in your account, results tracked daily.</p>
           <span class="svc-card__link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </a>
 
@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/></svg>
           </span>
           <h3>Graphic Design</h3>
-          <p>Logos, brand systems and every file format your printer and social manager will ever ask for — source files included.</p>
+          <p>Logos, brand systems and every file format your printer and social manager will ever ask for, with source files included.</p>
           <span class="svc-card__link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </a>
 

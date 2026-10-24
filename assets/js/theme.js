@@ -170,9 +170,9 @@
       $("doneText").textContent = "Your brief is in. A fixed quote comes back to " + (v["your-email"] || "your inbox") + " inside 24 hours.";
       var rows = [
         ["Needs", needs.join(", ") || "Not specified"],
-        ["Timing", v.when || "—"],
-        ["Company", String(v.company || "").trim() || "—"],
-        ["Reply to", v["your-email"] || "—"]
+        ["Timing", v.when || "Not given"],
+        ["Company", String(v.company || "").trim() || "Not given"],
+        ["Reply to", v["your-email"] || "Not given"]
       ];
       var html = "";
       for(var i = 0; i < rows.length; i++){
