@@ -128,6 +128,106 @@ function verdex_image_url( $file ) {
 }
 
 /**
+ * Site logo link for the header and footer. Uses the logo set in
+ * Appearance > Customize > Site Identity when there is one, otherwise the
+ * uploaded Verdex logo.
+ *
+ * @param string $class Extra class for the link.
+ */
+function verdex_logo( $class = '' ) {
+	$src = has_custom_logo()
+		? wp_get_attachment_image_url( get_theme_mod( 'custom_logo' ), 'full' )
+		: 'https://verdexwebsolutions.com/wp-content/uploads/2026/10/Verdex-Web-Solutions-Logo-1-2.png';
+
+	printf(
+		'<a href="%1$s" class="mark %2$s" aria-label="%3$s"><img src="%4$s" alt="%3$s" width="1600" height="533" class="mark-img"></a>',
+		esc_url( home_url( '/' ) ),
+		esc_attr( $class ),
+		esc_attr( get_bloginfo( 'name' ) ),
+		esc_url( $src )
+	);
+}
+
+/**
+ * Contact email from the Customizer.
+ *
+ * @return string
+ */
+function verdex_email() {
+	return get_theme_mod( 'verdex_email', 'hello@verdexwebsolutions.com' );
+}
+
+/**
+ * Contact phone from the Customizer, as displayed.
+ *
+ * @return string
+ */
+function verdex_phone() {
+	return get_theme_mod( 'verdex_phone', '+92 349 510 4793' );
+}
+
+/**
+ * Phone number reduced to digits with a leading +, for tel: and WhatsApp links.
+ *
+ * @return string
+ */
+function verdex_phone_digits() {
+	$phone = verdex_phone();
+	return ( 0 === strpos( trim( $phone ), '+' ) ? '+' : '' ) . preg_replace( '/\D+/', '', $phone );
+}
+
+/**
+ * Clickable email link.
+ */
+function verdex_email_link() {
+	printf( '<a href="mailto:%1$s">%2$s</a>', esc_attr( verdex_email() ), esc_html( verdex_email() ) );
+}
+
+/**
+ * Clickable phone link. Pass 'whatsapp' to open a WhatsApp chat instead of a call.
+ *
+ * @param string $type 'tel' or 'whatsapp'.
+ */
+function verdex_phone_link( $type = 'tel' ) {
+	$href = 'whatsapp' === $type
+		? 'https://wa.me/' . ltrim( verdex_phone_digits(), '+' )
+		: 'tel:' . verdex_phone_digits();
+	$attrs = 'whatsapp' === $type ? ' target="_blank" rel="noopener"' : '';
+
+	printf( '<a href="%1$s"%2$s>%3$s</a>', esc_url( $href, array( 'tel', 'https' ) ), $attrs, esc_html( verdex_phone() ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- $attrs is a fixed string.
+}
+
+/**
+ * Turn the site's email and phone into links wherever they appear as plain
+ * text in page and post content written in the editor.
+ *
+ * @param string $content Post content.
+ * @return string
+ */
+function verdex_link_contacts( $content ) {
+	$parts = preg_split( '/(<a\b[^>]*>.*?<\/a>|<[^>]+>)/is', $content, -1, PREG_SPLIT_DELIM_CAPTURE );
+	$email = verdex_email();
+	$phone = verdex_phone();
+
+	foreach ( $parts as $i => $part ) {
+		if ( '' === $part || '<' === $part[0] ) {
+			continue;
+		}
+		if ( $email && false !== stripos( $part, $email ) ) {
+			$part = str_ireplace( $email, '<a href="mailto:' . esc_attr( $email ) . '">' . esc_html( $email ) . '</a>', $part );
+		}
+		if ( $phone && false !== strpos( $part, $phone ) ) {
+			$part = str_replace( $phone, '<a href="' . esc_url( 'tel:' . verdex_phone_digits(), array( 'tel' ) ) . '">' . esc_html( $phone ) . '</a>', $part );
+		}
+		$parts[ $i ] = $part;
+	}
+
+	return implode( '', $parts );
+}
+add_filter( 'the_content', 'verdex_link_contacts', 20 );
+add_filter( 'widget_text_content', 'verdex_link_contacts', 20 );
+
+/**
  * Fallback primary menu, used until a menu is assigned in Appearance > Menus.
  * Matches the markup wp_nav_menu() produces for the header, so the CSS and the
  * mobile rules apply either way.

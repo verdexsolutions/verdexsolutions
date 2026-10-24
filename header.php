@@ -24,10 +24,7 @@
 <nav id="nav">
   <div class="wrap">
     <div class="nav-in">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mark" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
-        <span class="mark-g">V</span>
-        <span class="mark-t">VERDEX<span><?php esc_html_e( 'WEB SOLUTIONS', 'verdex' ); ?></span></span>
-      </a>
+      <?php verdex_logo(); ?>
 
       <?php
       wp_nav_menu(

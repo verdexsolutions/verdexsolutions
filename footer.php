@@ -12,10 +12,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-col foot-brand">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mark">
-          <span class="mark-g">V</span>
-          <span class="mark-t">VERDEX<span><?php esc_html_e( 'WEB SOLUTIONS', 'verdex' ); ?></span></span>
-        </a>
+        <?php verdex_logo( 'mark--foot' ); ?>
         <p><?php echo esc_html( get_bloginfo( 'description' ) ? get_bloginfo( 'description' ) : __( 'Web development, SEO, digital marketing and design for businesses that need the phone to ring.', 'verdex' ) ); ?></p>
         <div class="socials">
           <a href="<?php echo esc_url( get_theme_mod( 'verdex_instagram', '#' ) ); ?>" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 3.25.15 4.77 1.69 4.92 4.92.06 1.28.07 1.67.07 4.88s0 3.6-.07 4.88c-.15 3.22-1.66 4.77-4.92 4.92-1.28.06-1.67.07-4.9.07s-3.6 0-4.88-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.14 15.67 2.13 15.28 2.13 12s0-3.6.07-4.88c.15-3.23 1.66-4.77 4.92-4.92C8.4 2.14 8.8 2.2 12 2.2Zm0 3.64a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></svg></a>
@@ -57,8 +54,8 @@
       <div class="foot-col">
         <h4><?php esc_html_e( 'Get in touch', 'verdex' ); ?></h4>
         <ul>
-          <li><span><?php echo esc_html( get_theme_mod( 'verdex_email', 'hello@verdexwebsolutions.com' ) ); ?></span></li>
-          <li><span><?php echo esc_html( get_theme_mod( 'verdex_phone', '+92 349 510 4793' ) ); ?></span></li>
+          <li><?php verdex_email_link(); ?></li>
+          <li><?php verdex_phone_link(); ?></li>
         </ul>
       </div>
     </div>

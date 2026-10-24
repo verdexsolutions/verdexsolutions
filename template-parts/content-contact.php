@@ -35,10 +35,10 @@ if ( ! defined( 'ABSPATH' ) ) {
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"/></svg> Notes on what we would fix first, free either way</li>
         </ul>
         <div class="qcontact">
-          <div class="qrow"><em>Email</em> hello@verdexwebsolutions.com
-            <button class="copy" data-copy="hello@verdexwebsolutions.com">Copy</button></div>
-          <div class="qrow"><em>WhatsApp</em> +92 349 510 4793
-            <button class="copy" data-copy="+923495104793">Copy</button></div>
+          <div class="qrow"><em>Email</em> <?php verdex_email_link(); ?>
+            <button class="copy" data-copy="<?php echo esc_attr( verdex_email() ); ?>">Copy</button></div>
+          <div class="qrow"><em>WhatsApp</em> <?php verdex_phone_link( 'whatsapp' ); ?>
+            <button class="copy" data-copy="<?php echo esc_attr( verdex_phone_digits() ); ?>">Copy</button></div>
         </div>
       </div>
 
