@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h2 style="margin-top:16px">Careful build, <span class="it">clean handover</span>.</h2>
         <p class="lead" style="margin-top:18px">
           The work is only half of it. The other half is knowing what you are paying,
-          seeing it happen, and owning everything at the end.
+          seeing it happen, and owning everything at the end. <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>">Our portfolio</a> shows where that has led.
         </p>
 
         <div class="why-points">

@@ -135,6 +135,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <p class="lead">
           Most agencies hand over a site and disappear. We build it, get it found, put
           traffic in front of it, and keep the brand consistent across all of it.
+          See <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>">recent projects</a>, or read <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'about' ) ); ?>">how we work</a>.
         </p>
       </div>
 

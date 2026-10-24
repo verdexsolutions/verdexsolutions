@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="wrap">
       <span class="kicker">Services</span>
       <h1 style="margin-top:18px;font-size:clamp(2.8rem,6vw,4.8rem);max-width:16ch">Everything your business needs, <span class="it">one team</span>.</h1>
-      <p class="lead" style="margin-top:20px;max-width:52ch">Web development, SEO, digital marketing and graphic design — handled by the same people from brief to handover.</p>
+      <p class="lead" style="margin-top:20px;max-width:52ch">Web development, SEO, digital marketing and graphic design — handled by the same people from brief to handover. See the results in <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>">our portfolio</a>, or <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'about' ) ); ?>">meet the team</a>.</p>
       <nav class="svcs-nav">
         <a href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">Web Development</a>
         <a href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">SEO</a>
