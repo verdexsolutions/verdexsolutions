@@ -690,3 +690,14 @@ footer{background:var(--bg);border-top:1px solid var(--line-2);padding-block:cla
 .ilink{color:var(--acc);text-decoration:none;font-weight:600;transition:color .2s}
 .ilink:hover{color:var(--acc-2)}
 a.svc-card__link:hover{color:var(--acc-2)}
+
+/* Blog post body */
+.entry>*+*{margin-top:1.1em}
+.entry h2{font-family:var(--disp);font-weight:700;font-size:clamp(1.45rem,2.6vw,1.9rem);letter-spacing:-.02em;
+  line-height:1.2;color:var(--fg);margin-top:2.1em}
+.entry h3{font-size:1.15rem;font-weight:800;color:var(--fg);margin-top:1.8em}
+.entry p,.entry li{color:var(--fg-2)}
+.entry ul,.entry ol{padding-left:1.3em;display:grid;gap:.5em}
+.entry strong{color:var(--fg)}
+.entry a{color:var(--acc);font-weight:600;text-decoration:none}
+.entry a:hover{color:var(--acc-2)}

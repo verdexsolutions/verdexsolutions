@@ -25,7 +25,7 @@ while ( have_posts() ) :
             <?php the_post_thumbnail( 'large' ); ?>
           </figure>
         <?php endif; ?>
-        <div class="lead" style="max-width:72ch">
+        <div class="lead entry" style="max-width:72ch">
           <?php
           the_content();
           wp_link_pages(
