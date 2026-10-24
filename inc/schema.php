@@ -232,14 +232,18 @@ function verdex_schema_graph( $data ) {
 		);
 	}
 
+	// FAQs go on the WebPage node itself: a separate FAQPage node (a WebPage
+	// subtype) makes Rank Math drop its own WebPage node.
 	$faqs = verdex_schema_faqs( $slug );
 	if ( $faqs ) {
-		$data['verdexFaq'] = array(
-			'@type'      => 'FAQPage',
-			'@id'        => $url . '#faq',
-			'isPartOf'   => array( '@id' => $url . '#webpage' ),
-			'mainEntity' => $faqs,
-		);
+		foreach ( $data as $key => $node ) {
+			$type = isset( $node['@type'] ) ? (array) $node['@type'] : array();
+			if ( array_intersect( $type, array( 'WebPage', 'AboutPage', 'ContactPage', 'CollectionPage' ) ) ) {
+				$data[ $key ]['@type']      = array_values( array_unique( array_merge( $type, array( 'FAQPage' ) ) ) );
+				$data[ $key ]['mainEntity'] = $faqs;
+				break;
+			}
+		}
 	}
 
 	return $data;
