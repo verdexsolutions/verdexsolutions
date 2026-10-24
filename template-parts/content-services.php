@@ -17,10 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
       <h1 style="margin-top:18px;font-size:clamp(2.8rem,6vw,4.8rem);max-width:16ch">Everything your business needs, <span class="it">one team</span>.</h1>
       <p class="lead" style="margin-top:20px;max-width:52ch">Web development, SEO, digital marketing and graphic design — handled by the same people from brief to handover.</p>
       <nav class="svcs-nav">
-        <a href="#web-development">Web Development</a>
-        <a href="#seo">SEO</a>
-        <a href="#digital-marketing">Digital Marketing</a>
-        <a href="#graphic-design">Graphic Design</a>
+        <a href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">Web Development</a>
+        <a href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">SEO</a>
+        <a href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>">Digital Marketing</a>
+        <a href="<?php echo esc_url( verdex_page_url( 'graphic-design' ) ); ?>">Graphic Design</a>
       </nav>
     </div>
   </section>
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="wrap">
       <div class="svcs-grid">
 
-        <a href="#web-development" class="svc-card">
+        <a href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>" class="svc-card">
           <span class="svc-card__num">01</span>
           <span class="svc-card__ico">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <span class="svc-card__link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </a>
 
-        <a href="#seo" class="svc-card">
+        <a href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>" class="svc-card">
           <span class="svc-card__num">02</span>
           <span class="svc-card__ico">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <span class="svc-card__link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </a>
 
-        <a href="#digital-marketing" class="svc-card">
+        <a href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>" class="svc-card">
           <span class="svc-card__num">03</span>
           <span class="svc-card__ico">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <span class="svc-card__link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </a>
 
-        <a href="#graphic-design" class="svc-card">
+        <a href="<?php echo esc_url( verdex_page_url( 'graphic-design' ) ); ?>" class="svc-card">
           <span class="svc-card__num">04</span>
           <span class="svc-card__ico">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/></svg>
