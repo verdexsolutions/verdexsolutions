@@ -10,16 +10,19 @@ get_header();
 
 <section class="sec band" style="padding-top:clamp(118px,14vw,166px)">
   <div class="wrap">
-    <span class="kicker"><?php echo esc_html( is_home() ? __( 'Journal', 'verdex' ) : __( 'Archive', 'verdex' ) ); ?></span>
+    <span class="kicker"><?php echo esc_html( is_home() ? __( 'Blog', 'verdex' ) : __( 'Archive', 'verdex' ) ); ?></span>
     <h2 style="margin-top:18px;font-size:clamp(2.2rem,5vw,3.6rem)">
       <?php
       if ( is_home() ) {
-          esc_html_e( 'Notes from the build', 'verdex' );
+          printf( '%1$s <span class="it">%2$s</span>.', esc_html__( 'Notes from', 'verdex' ), esc_html__( 'the build', 'verdex' ) );
       } else {
           the_archive_title();
       }
       ?>
     </h2>
+    <?php if ( is_home() ) : ?>
+      <p class="lead" style="margin-top:20px;max-width:60ch"><?php esc_html_e( 'Practical write-ups on web development, SEO, digital marketing and design: what we fixed, what worked, and what it cost.', 'verdex' ); ?></p>
+    <?php endif; ?>
   </div>
 </section>
 
@@ -62,7 +65,17 @@ get_header();
         ?>
       </div>
     <?php else : ?>
-      <p class="lead"><?php esc_html_e( 'Nothing published here yet.', 'verdex' ); ?></p>
+      <p class="lead"><?php esc_html_e( 'The first posts are on their way.', 'verdex' ); ?></p>
+      <p class="lead" style="margin-top:12px">
+        <?php
+        printf(
+            /* translators: 1: services link, 2: portfolio link */
+            esc_html__( 'In the meantime, see %1$s or %2$s.', 'verdex' ),
+            '<a class="ilink" href="' . esc_url( verdex_page_url( 'services' ) ) . '">' . esc_html__( 'what we do', 'verdex' ) . '</a>',
+            '<a class="ilink" href="' . esc_url( verdex_page_url( 'portfolio' ) ) . '">' . esc_html__( 'recent projects', 'verdex' ) . '</a>'
+        );
+        ?>
+      </p>
     <?php endif; ?>
   </div>
 </section>

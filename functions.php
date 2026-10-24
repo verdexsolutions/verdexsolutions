@@ -279,9 +279,11 @@ function verdex_drawer_fallback() {
  */
 function verdex_menu_items( $class ) {
 	$items = array(
+		'home'      => __( 'Home', 'verdex' ),
 		'services'  => __( 'Services', 'verdex' ),
 		'portfolio' => __( 'Portfolio', 'verdex' ),
 		'about'     => __( 'About', 'verdex' ),
+		'blog'      => __( 'Blog', 'verdex' ),
 	);
 
 	$service_subs = array(
@@ -371,6 +373,7 @@ function verdex_footer_company_fallback() {
 	$items = array(
 		'portfolio' => __( 'Portfolio', 'verdex' ),
 		'about'     => __( 'About', 'verdex' ),
+		'blog'      => __( 'Blog', 'verdex' ),
 		'contact'   => __( 'Contact', 'verdex' ),
 	);
 
