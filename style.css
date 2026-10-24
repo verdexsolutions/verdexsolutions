@@ -575,7 +575,8 @@ footer{background:var(--bg);border-top:1px solid var(--line-2);padding-block:cla
 .aligncenter{display:block;margin-inline:auto}
 
 /* ---------- Nav dropdown ---------- */
-.nav-links .menu-item-has-children{position:relative;padding-bottom:16px}
+.nav-links .menu-item-has-children{position:relative}
+.nav-links .menu-item-has-children::before{content:'';position:absolute;top:100%;left:-10px;right:-10px;height:18px}
 /* chevron arrow */
 .nav-links .menu-item-has-children > a{display:inline-flex;align-items:center;gap:5px}
 .nav-links .menu-item-has-children > a::after{
