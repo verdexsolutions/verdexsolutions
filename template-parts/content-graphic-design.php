@@ -63,37 +63,37 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
       <div class="svcp-cards">
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="Logo design" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></span>
           <h3>Logo design</h3>
           <p>Primary mark, secondary version, and icon. Delivered in SVG, PDF, PNG (transparent background), and EPS. Three initial concepts, revisions on the chosen one until the brief is met.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Brand system" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6.5" cy="17" r="2.5"/></svg></span>
           <h3>Brand system</h3>
           <p>Colour palette with hex, RGB, and CMYK values. Typeface choices with sizing rules. A one-page brand sheet your team can follow without calling us.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="Social templates" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
           <h3>Social templates</h3>
           <p>Story, post, and cover templates sized for Instagram, Facebook, and LinkedIn. Built in Canva or Figma so your team can edit them without design software.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="Print artwork" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
           <h3>Print artwork</h3>
           <p>Business cards, letterheads, brochures, and signage. CMYK values correct, bleed included, and sent to your printer in the format they actually ask for.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="UI and UX design" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></span>
           <h3>UI and UX design</h3>
           <p>Screen designs for web and app projects. Wireframes first, then high-fidelity mockups your developer can build from without guessing at measurements.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Full file handover" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/></svg></span>
           <h3>Full file handover</h3>
           <p>Editable source files in AI, PSD, or Figma. Every format. No charge for the files and no request to stay on a retainer to access your own brand assets.</p>

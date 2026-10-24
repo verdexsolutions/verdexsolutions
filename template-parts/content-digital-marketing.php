@@ -63,37 +63,37 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
       <div class="svcp-cards">
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="Google Ads" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
           <h3>Google Ads</h3>
           <p>Search, shopping, and display campaigns built around one clear offer. Keyword targeting, negative lists, and bid strategy set properly from the start.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="Meta Ads" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span>
           <h3>Meta Ads</h3>
           <p>Traffic, retargeting, and lead generation on Facebook and Instagram. Audiences built from your data, not Meta's defaults.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Landing pages included" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
           <h3>Landing pages included</h3>
           <p>We write and build the page the ad sends people to. Most agencies charge extra for this. We include it because an ad without a matching landing page wastes budget.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="Conversion tracking" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
           <h3>Conversion tracking</h3>
           <p>GA4 and Meta pixel set up correctly from day one. We track actual conversions, not just clicks and impressions.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="Email retargeting" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
           <h3>Email retargeting</h3>
           <p>Automated flows for people who visited but did not convert. Set up once, running continuously, no manual work after launch.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="Monthly review" loading="lazy"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
           <h3>Monthly review</h3>
           <p>What to cut, what to scale, and what to test next. Every month, in a call or a written report, your choice.</p>
