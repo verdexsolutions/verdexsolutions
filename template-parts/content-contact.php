@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
         <div class="qa">
           <button class="q" aria-expanded="false">Do you take small jobs?</button>
-          <div class="a"><div class="a-in"><p>Yes. Speed fixes, a single landing page, a logo on its own, or taking over a site another developer walked away from.</p></div></div>
+          <div class="a"><div class="a-in"><p>Yes. <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">Speed fixes</a>, a <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>">single landing page</a>, <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'graphic-design' ) ); ?>">a logo on its own</a>, or taking over a site another developer walked away from. See <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>">recent projects</a> for the range.</p></div></div>
         </div>
       </div>
     </div>

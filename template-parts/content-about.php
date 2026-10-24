@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span class="wp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 4.5 13.5H11l-.8 8 8.5-11H12Z"/></svg></span>
             <div>
               <h3>One team, start to finish</h3>
-              <p>Design, build, SEO and ads sit with the same people. Nothing gets lost in a handoff between three vendors who blame each other.</p>
+              <p><a class="ilink" href="<?php echo esc_url( verdex_page_url( 'graphic-design' ) ); ?>">Design</a>, <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">build</a>, <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">SEO</a> and <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>">ads</a> sit with the same people. Nothing gets lost in a handoff between three vendors who blame each other.</p>
             </div>
           </div>
           <div class="wp">

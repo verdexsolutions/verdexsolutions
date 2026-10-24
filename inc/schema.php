@@ -108,6 +108,7 @@ function verdex_schema_faqs( $part ) {
 	}
 
 	$src = file_get_contents( $file ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents -- local theme file.
+	$src = preg_replace( '/<\?php.*?\?>/s', '', $src ); // Drop PHP such as link URLs; the link text stays.
 	$out = array();
 
 	preg_match_all( '#<button class="q"[^>]*>(.*?)</button>\s*<div class="a"><div class="a-in">(.*?)</div></div>#s', $src, $accordion, PREG_SET_ORDER );
@@ -116,7 +117,7 @@ function verdex_schema_faqs( $part ) {
 	foreach ( array_merge( $accordion, $details ) as $m ) {
 		$q = trim( html_entity_decode( wp_strip_all_tags( $m[1] ), ENT_QUOTES, 'UTF-8' ) );
 		$a = trim( preg_replace( '/\s+/', ' ', html_entity_decode( wp_strip_all_tags( $m[2] ), ENT_QUOTES, 'UTF-8' ) ) );
-		if ( '' === $q || '' === $a || false !== strpos( $q . $a, '<?' ) ) {
+		if ( '' === $q || '' === $a ) {
 			continue;
 		}
 		$out[] = array(

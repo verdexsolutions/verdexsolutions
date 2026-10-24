@@ -166,6 +166,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
   </section>
 
+  <?php get_template_part( 'template-parts/related', 'services', array( 'current' => 'graphic-design' ) ); ?>
+
   <!-- CTA -->
   <section class="sec sec--alt band">
     <div class="wrap">

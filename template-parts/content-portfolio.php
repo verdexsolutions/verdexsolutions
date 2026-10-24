@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <div class="shot"><b>01</b><em>WooCommerce / configurator</em></div>
           <div class="proj-txt">
             <h3>Kitchen furniture store</h3>
-            <p>A product configurator with hinge, finish and size variants feeding live prices into the cart, plus a checkout that handles made-to-order lead times.</p>
+            <p>A <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">product configurator</a> with hinge, finish and size variants feeding live prices into the cart, plus a checkout that handles made-to-order lead times.</p>
             <div class="proj-res">Screenshot and result to be added</div>
           </div>
         </article>
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <div class="shot"><b>02</b><em>Local service / SEO</em></div>
           <div class="proj-txt">
             <h3>Plumbing company</h3>
-            <p>Service and area pages generated from one template, wired to a quote form and a Google Business Profile for local search.</p>
+            <p>Service and area pages generated from one template, wired to a quote form and a Google Business Profile for <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">local search</a>.</p>
             <div class="proj-res">Screenshot and result to be added</div>
           </div>
         </article>
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <div class="shot"><b>03</b><em>Landing page / email</em></div>
           <div class="proj-txt">
             <h3>Book launch page</h3>
-            <p>One page built around pre-orders, with retailer links, a sample chapter download and an email capture feeding a welcome sequence.</p>
+            <p>One <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>">landing page</a> built around pre-orders, with retailer links, a sample chapter download and an email capture feeding a welcome sequence.</p>
             <div class="proj-res">Screenshot and result to be added</div>
           </div>
         </article>
@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <div class="shot"><b>05</b><em>Brand and site</em></div>
           <div class="proj-txt">
             <h3>Pool service company</h3>
-            <p>Logo, colour system and a five page site, booking seasonal maintenance through a two step enquiry form.</p>
+            <p><a class="ilink" href="<?php echo esc_url( verdex_page_url( 'graphic-design' ) ); ?>">Logo, colour system</a> and a five page site, booking seasonal maintenance through a two step enquiry form.</p>
             <div class="proj-res">Screenshot and result to be added</div>
           </div>
         </article>

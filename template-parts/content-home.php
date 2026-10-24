@@ -96,14 +96,14 @@ if ( ! defined( 'ABSPATH' ) ) {
           <span class="pf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.2 2"/></svg></span>
           <div>
             <h3>It takes forever to load</h3>
-            <p>Five seconds on mobile and half your visitors are gone before the logo appears. <b>We rebuild the theme properly and strip the plugin stack.</b></p>
+            <p>Five seconds on mobile and half your visitors are gone before the logo appears. <b>We <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">rebuild the theme properly</a> and strip the plugin stack.</b></p>
           </div>
         </div>
         <div class="pf-row rv">
           <span class="pf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></span>
           <div>
             <h3>Nobody can find you</h3>
-            <p>You rank for your own name and nothing else anyone actually searches. <b>We audit, fix the crawling, then build pages around real terms.</b></p>
+            <p>You rank for your own name and nothing else anyone actually searches. <b>We <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">audit and fix the crawling</a>, then build pages around real terms.</b></p>
           </div>
         </div>
         <div class="pf-row rv">
@@ -117,7 +117,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <span class="pf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 9.5 11l4 3.6L20 7"/><path d="M20 11.5V7h-4.5"/></svg></span>
           <div>
             <h3>Ads burn money</h3>
-            <p>Clicks arrive, enquiries do not, and nothing is tracked properly. <b>We rebuild the landing page and the tracking before touching budget.</b></p>
+            <p>Clicks arrive, enquiries do not, and nothing is tracked properly. <b>We <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>">rebuild the landing page and the tracking</a> before touching budget.</b></p>
           </div>
         </div>
       </div>
@@ -150,6 +150,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Editable sections, not locked layouts</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Loads fast on a weak mobile signal</li>
           </ul>
+          <a class="svc-card__link" href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">Website development services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
         </article>
 
         <article class="svc rv">
@@ -163,6 +164,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Rankings tracked from day one</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> One report you can read in five minutes</li>
           </ul>
+          <a class="svc-card__link" href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">SEO services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
         </article>
 
         <article class="svc rv">
@@ -176,6 +178,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Ad spend stays in your own account</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Landing pages included, not extra</li>
           </ul>
+          <a class="svc-card__link" href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>">Digital marketing services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
         </article>
 
         <article class="svc rv">
@@ -189,6 +192,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Revisions until it matches the brief</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12.5 5 5L20 6.5"/></svg> Social and print templates included</li>
           </ul>
+          <a class="svc-card__link" href="<?php echo esc_url( verdex_page_url( 'graphic-design' ) ); ?>">Graphic design services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
         </article>
       </div>
 
@@ -211,7 +215,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <span class="wp-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 4.5 13.5H11l-.8 8 8.5-11H12Z"/></svg></span>
             <div>
               <h3>One team, start to finish</h3>
-              <p>Design, build, SEO and ads sit with the same people. Nothing gets lost in a handoff between three vendors who blame each other.</p>
+              <p><a class="ilink" href="<?php echo esc_url( verdex_page_url( 'graphic-design' ) ); ?>">Design</a>, <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'web-development' ) ); ?>">build</a>, <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'seo' ) ); ?>">SEO</a> and <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'digital-marketing' ) ); ?>">ads</a> sit with the same people. Nothing gets lost in a handoff between three vendors who blame each other.</p>
             </div>
           </div>
           <div class="wp">

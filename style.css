@@ -685,3 +685,9 @@ footer{background:var(--bg);border-top:1px solid var(--line-2);padding-block:cla
   .svcp-steps{grid-template-columns:1fr 1fr}
   .svcp-steps.svcp-steps--4{grid-template-columns:1fr 1fr}
 }
+
+/* In-copy links between pages */
+.ilink{color:inherit;text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:1.5px;
+  text-underline-offset:3px;transition:color .2s}
+.ilink:hover{color:var(--acc)}
+a.svc-card__link:hover{color:var(--acc-2)}
