@@ -288,6 +288,11 @@ if ( ! defined( 'ABSPATH' ) ) {
   </section>
 
   <!-- ============ REVIEWS ============ -->
+  <?php
+  // Reviews are hidden until real client reviews are in. To show them again,
+  // replace the placeholder quotes below with real ones and change false to true.
+  if ( false ) :
+  ?>
   <!-- PLACEHOLDER COPY. Replace each quote, name and company with a real review
        before this page goes live. Do not publish invented reviews. -->
   <section class="sec band">
@@ -350,6 +355,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
     </div>
   </section>
+  <?php endif; ?>
 
   <!-- ============ FAQ ============ -->
   <section class="sec sec--alt band" id="faq">
