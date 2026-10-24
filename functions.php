@@ -406,6 +406,7 @@ function verdex_customize_register( $wp_customize ) {
 		'verdex_email'     => array( __( 'Email address', 'verdex' ), 'hello@verdexwebsolutions.com', 'sanitize_email' ),
 		'verdex_phone'     => array( __( 'Phone / WhatsApp', 'verdex' ), '+92 349 510 4793', 'sanitize_text_field' ),
 		'verdex_instagram' => array( __( 'Instagram URL', 'verdex' ), '#', 'esc_url_raw' ),
+		'verdex_facebook'  => array( __( 'Facebook URL', 'verdex' ), '#', 'esc_url_raw' ),
 		'verdex_linkedin'  => array( __( 'LinkedIn URL', 'verdex' ), '#', 'esc_url_raw' ),
 		'verdex_github'    => array( __( 'GitHub URL', 'verdex' ), '#', 'esc_url_raw' ),
 	);

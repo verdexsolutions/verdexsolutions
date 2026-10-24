@@ -50,7 +50,7 @@ function verdex_schema_organization() {
 	}
 
 	$same_as = array();
-	foreach ( array( 'verdex_instagram', 'verdex_linkedin', 'verdex_github' ) as $mod ) {
+	foreach ( array( 'verdex_instagram', 'verdex_facebook', 'verdex_linkedin', 'verdex_github' ) as $mod ) {
 		$url = get_theme_mod( $mod, '#' );
 		if ( $url && '#' !== $url ) {
 			$same_as[] = esc_url_raw( $url );
