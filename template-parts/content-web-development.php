@@ -63,31 +63,37 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
       <div class="svcp-cards">
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy" style="object-position:0% 20%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
           <h3>Custom WordPress theme</h3>
           <p>Built from your brand files or ours. No Elementor, no Divi. The output is clean PHP and CSS that loads fast and breaks less.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy" style="object-position:100% 0%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><path d="m16 8 5 3-5 3V8z"/></svg></span>
           <h3>WooCommerce stores</h3>
           <p>Variants, pricing rules, delivery zones, and tax logic. Tested against real checkout flows before we hand it over.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy" style="object-position:50% 0%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 4.5 13.5H11l-.8 8 8.5-11H12Z"/></svg></span>
           <h3>Performance built in</h3>
           <p>Images sized, fonts loaded correctly, caching configured. Every site scores 90+ on Core Web Vitals before it goes live.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy" style="object-position:0% 80%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></span>
           <h3>Editable by your team</h3>
           <p>Advanced Custom Fields built into every template your client touches. Changing a heading or swapping an image takes 30 seconds.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy" style="object-position:100% 80%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M16.5 9.4 7.55 4.24"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/><circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27 22 19"/></svg></span>
           <h3>Migration and redirects</h3>
           <p>We move your content from the old host, map every redirect, and verify the domain switch. No ranking drop from a broken 301.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="" loading="lazy" style="object-position:50% 100%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3"/><rect x="4.5" y="11" width="15" height="9.5" rx="2.5"/></svg></span>
           <h3>You keep every key</h3>
           <p>Hosting, domain, and Google Analytics in your name from day one. No monthly fee to access your own site. No lock-in.</p>

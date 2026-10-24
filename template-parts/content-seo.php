@@ -63,31 +63,37 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
       <div class="svcp-cards">
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy" style="object-position:0% 20%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
           <h3>Technical audit</h3>
           <p>Crawl errors, broken redirects, duplicate content, slow pages, and missing schema. Found, logged, and fixed inside 5 working days.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy" style="object-position:100% 0%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></span>
           <h3>On-page optimisation</h3>
           <p>Titles, headings, internal links, and schema. All checked against what people in your market actually search for, not what a tool suggests.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy" style="object-position:50% 0%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <h3>Local SEO</h3>
           <p>Google Business Profile set up and optimised. Citations cleaned up. Location pages built properly. Useful if most of your customers come from one city.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy" style="object-position:0% 80%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
           <h3>Content built on real data</h3>
           <p>We write content around search terms people actually type, not keyword-stuffed articles that satisfy a tool and nobody reads.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy" style="object-position:100% 80%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
           <h3>Rankings tracked from day one</h3>
           <p>We set up tracking before the first change goes live, so you can see what moved, when it moved, and why.</p>
         </div>
         <div class="svcp-card rv">
+          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="" loading="lazy" style="object-position:50% 100%"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
           <h3>Monthly report</h3>
           <p>One report, every month. Rankings, traffic, and what changed. Written to be readable in five minutes, not fifty.</p>
