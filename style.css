@@ -753,3 +753,8 @@ a.svc-card__link:hover{color:var(--acc-2)}
   .post-toc details:not([open]){padding-bottom:18px}
   .post-main{margin:0 auto}
 }
+.post-toc summary{display:flex;justify-content:space-between;align-items:center}
+.post-toc summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:rotate(45deg) translateY(-2px);transition:transform .2s}
+.post-toc details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+@media (max-width:560px){.post-meta .post-dot:last-of-type{display:none}.post-meta>span:last-child{flex-basis:100%}}
