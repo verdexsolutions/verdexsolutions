@@ -216,7 +216,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
 
       <figure class="shotframe rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Developer-Workspace-Dashboard.png" alt="Why choose Verdex: developer workspace with glowing code panels" loading="lazy">
+        <img src="<?php echo esc_url( verdex_image_url( 'handover-keys.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'handover-keys-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'handover-keys.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 50vw" width="1200" height="900" alt="Keys being handed across a desk next to a laptop at a project handover" loading="lazy" decoding="async">
       </figure>
     </div>
   </section>
