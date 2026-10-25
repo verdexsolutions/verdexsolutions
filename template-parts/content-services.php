@@ -143,7 +143,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   <section class="sec band svc-detail-sec" id="digital-marketing">
     <div class="wrap svc-detail">
       <figure class="svc-img-frame rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="Digital marketing" loading="lazy">
+        <img src="<?php echo esc_url( verdex_image_url( 'svc-marketing.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'svc-marketing-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'svc-marketing.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 50vw" width="1200" height="900" alt="Phone showing a social media ad beside a laptop with an ad campaign dashboard" loading="lazy" decoding="async">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           <span>Digital Marketing</span>
@@ -190,7 +190,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </a>
       </div>
       <figure class="svc-img-frame rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="Graphic design" loading="lazy">
+        <img src="<?php echo esc_url( verdex_image_url( 'svc-design.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'svc-design-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'svc-design.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 50vw" width="1200" height="900" alt="Brand kit on a desk: colour swatches, logo sketches, business cards and a brand sheet" loading="lazy" decoding="async">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
           <span>Graphic Design</span>
