@@ -8,7 +8,12 @@
 get_header();
 ?>
 
-<section class="sec band" style="padding-top:clamp(118px,14vw,166px)">
+<section class="sec band hero--photo" style="padding-top:clamp(118px,14vw,166px)">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="<?php echo esc_url( verdex_image_url( 'blog-hero.webp' ) ); ?>"
+      srcset="<?php echo esc_url( verdex_image_url( 'blog-hero-900.webp' ) ); ?> 900w, <?php echo esc_url( verdex_image_url( 'blog-hero.webp' ) ); ?> 1536w"
+      sizes="100vw" width="1536" height="1024" alt="" fetchpriority="high" decoding="async">
+  </div>
   <div class="wrap">
     <span class="kicker"><?php echo esc_html( is_home() ? __( 'Blog', 'verdex' ) : __( 'Archive', 'verdex' ) ); ?></span>
     <h2 style="margin-top:18px;font-size:clamp(2.2rem,5vw,3.6rem)">

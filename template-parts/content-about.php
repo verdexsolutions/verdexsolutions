@@ -9,7 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-  <section class="sec band" style="padding-top:clamp(118px,14vw,166px)">
+  <section class="sec band hero--photo" style="padding-top:clamp(118px,14vw,166px)">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="<?php echo esc_url( verdex_image_url( 'about-hero.webp' ) ); ?>"
+        srcset="<?php echo esc_url( verdex_image_url( 'about-hero-900.webp' ) ); ?> 900w, <?php echo esc_url( verdex_image_url( 'about-hero.webp' ) ); ?> 1536w"
+        sizes="100vw" width="1536" height="1024" alt="" fetchpriority="high" decoding="async">
+    </div>
     <div class="wrap">
       <span class="kicker">About</span>
       <h2 style="margin-top:18px;font-size:clamp(2.4rem,5.4vw,4.1rem)">A small studio that <span class="it">finishes things</span>.</h2>
