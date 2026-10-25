@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <p>Primary mark, secondary version, and icon. Delivered in SVG, PDF, PNG (transparent background), and EPS. Three initial concepts, revisions on the chosen one until the brief is met.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Brand system" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'gd-brand.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'gd-brand-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'gd-brand.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="One-page brand sheet with colour palette, typography and icon style beside matching swatch cards" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6.5" cy="17" r="2.5"/></svg></span>
           <h3>Brand system</h3>
           <p>Colour palette with hex, RGB, and CMYK values. Typeface choices with sizing rules. A one-page brand sheet your team can follow without calling us.</p>
