@@ -11,7 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
   <!-- ============ HERO ============ -->
-  <section class="sec band" style="padding-top:clamp(118px,14vw,166px);padding-bottom:clamp(40px,6vw,64px)">
+  <section class="sec band hero--photo" style="padding-top:clamp(118px,14vw,166px);padding-bottom:clamp(40px,6vw,64px)">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="<?php echo esc_url( verdex_image_url( 'services-hero.webp' ) ); ?>"
+        srcset="<?php echo esc_url( verdex_image_url( 'services-hero-900.webp' ) ); ?> 900w, <?php echo esc_url( verdex_image_url( 'services-hero.webp' ) ); ?> 1536w"
+        sizes="100vw" width="1536" height="1024" alt="" fetchpriority="high" decoding="async">
+    </div>
     <div class="wrap">
       <span class="kicker">Services</span>
       <h1 style="margin-top:18px;font-size:clamp(2.8rem,6vw,4.8rem);max-width:16ch">Everything your business needs, <span class="it">one team</span>.</h1>
