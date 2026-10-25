@@ -772,3 +772,5 @@ a.svc-card__link:hover{color:var(--acc-2)}
   .hero-bg img{object-position:72% center}
   .hero-bg::after{background:linear-gradient(180deg,rgba(8,10,9,.78) 0%,rgba(8,10,9,.84) 55%,var(--bg) 100%)}
 }
+.hero--photo .wrap>h1,.hero--photo .wrap>h2{max-width:14ch}
+.hero--photo .wrap>.lead{max-width:52ch}
