@@ -41,7 +41,7 @@ get_header();
             ?>
           <article <?php post_class( 'proj' ); ?>>
             <?php if ( has_post_thumbnail() ) : ?>
-              <a href="<?php the_permalink(); ?>" class="shot" style="padding:0">
+              <a href="<?php the_permalink(); ?>" class="shot" style="padding:0;aspect-ratio:1200/630">
                 <?php the_post_thumbnail( 'large', array( 'style' => 'width:100%;height:100%;object-fit:cover' ) ); ?>
               </a>
             <?php else : ?>
