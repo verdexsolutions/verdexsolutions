@@ -204,5 +204,45 @@
     }
   }
 
+  /* ---- analytics events for Google Tag Manager ----
+     email_click / phone_click on any mailto: or tel: link, and
+     generate_lead when the quote form sends. No names, emails or
+     phone numbers typed by visitors are sent, only what was clicked
+     and which services the brief asked about. */
+  window.dataLayer = window.dataLayer || [];
+  function where(el){
+    if(el.closest("#drawer")) return "mobile_menu";
+    if(el.closest("#nav, header")) return "header";
+    if(el.closest("footer")) return "footer";
+    if(el.closest("#dock")) return "mobile_bar";
+    return "page";
+  }
+  document.addEventListener("click", function(e){
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"], a[href^="tel:"]');
+    if(!a) return;
+    var isMail = a.getAttribute("href").indexOf("mailto:") === 0;
+    window.dataLayer.push({
+      event: isMail ? "email_click" : "phone_click",
+      link_url: a.getAttribute("href"),
+      click_location: where(a),
+      page_path: location.pathname
+    });
+  }, true);
+  document.addEventListener("wpcf7mailsent", function(e){
+    var d = e.detail || {}, needs = [], when = "";
+    (d.inputs || []).forEach(function(i){
+      if(i.name === "needs[]") needs.push(i.value);
+      if(i.name === "when") when = i.value;
+    });
+    window.dataLayer.push({
+      event: "generate_lead",
+      form_id: String(d.contactFormId || ""),
+      form_name: "quote_form",
+      services: needs.join(", "),
+      timeline: when,
+      page_path: location.pathname
+    });
+  });
+
   var yr = $("yr"); if(yr) yr.textContent = new Date().getFullYear();
 })();
