@@ -3,8 +3,8 @@
  * Single post: centred header with author and reading time, a sticky
  * contents list beside the article, then an author card and a quote CTA.
  *
- * The featured image is used for the blog listing and social shares only;
- * it usually repeats the title, so it is not shown again here.
+ * The featured image shows as a wide cover under the header. Social shares
+ * use the Open Graph image set in Rank Math instead.
  *
  * @package Verdex
  */
@@ -46,6 +46,20 @@ while ( have_posts() ) :
             ?>
           </span>
         </div>
+        <?php if ( has_post_thumbnail() ) : ?>
+          <figure class="post-cover">
+            <?php
+            the_post_thumbnail(
+                'full',
+                array(
+                    'sizes'         => '(max-width: 1100px) 100vw, 1100px',
+                    'fetchpriority' => 'high',
+                    'loading'       => 'eager',
+                )
+            );
+            ?>
+          </figure>
+        <?php endif; ?>
       </div>
     </header>
 
