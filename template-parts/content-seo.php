@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
       </div>
       <figure class="svc-img-frame rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="SEO analytics workspace" loading="eager">
+        <img src="<?php echo esc_url( verdex_image_url( 'seo-hero.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'seo-hero-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'seo-hero.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 50vw" width="1200" height="900" alt="Laptop showing search results with the top result highlighted beside a tablet with rising search traffic" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </section>
@@ -69,31 +69,31 @@ if ( ! defined( 'ABSPATH' ) ) {
           <p>Crawl errors, broken redirects, duplicate content, slow pages, and missing schema. Found, logged, and fixed inside 5 working days.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="On-page optimisation" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'seo-onpage.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'seo-onpage-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'seo-onpage.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Printed web page marked up with green pen notes in front of the live page on a laptop" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></span>
           <h3>On-page optimisation</h3>
           <p>Titles, headings, internal links, and schema. All checked against what people in your market actually search for, not what a tool suggests.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="Local SEO" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'seo-local.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'seo-local-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'seo-local.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Phone showing a map with a business pin and listing, resting on a paper city map" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <h3>Local SEO</h3>
           <p>Google Business Profile set up and optimised. Citations cleaned up. Location pages built properly. Useful if most of your customers come from one city.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Content built on real data" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'seo-content.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'seo-content-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'seo-content.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Notebook of keyword research and content ideas beside an article draft on a laptop" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
           <h3>Content built on real data</h3>
           <p>We write content around search terms people actually type, not keyword-stuffed articles that satisfy a tool and nobody reads.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="Rankings tracked from day one" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'seo-rankings.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'seo-rankings-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'seo-rankings.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Monitor showing a search rankings table and a climbing traffic chart beside a desk calendar" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
           <h3>Rankings tracked from day one</h3>
           <p>We set up tracking before the first change goes live, so you can see what moved, when it moved, and why.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="Monthly report" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'dm-review.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'dm-review-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'dm-review.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Printed monthly report with charts and a highlighted section beside a desk calendar" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
           <h3>Monthly report</h3>
           <p>One report, every month. Rankings, traffic, and what changed. Written to be readable in five minutes, not fifty.</p>
