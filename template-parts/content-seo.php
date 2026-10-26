@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
       <div class="svcp-cards">
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="Technical audit" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'seo-audit.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'seo-audit-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'seo-audit.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Laptop showing a website audit report beside a printed audit checklist and a magnifying glass" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
           <h3>Technical audit</h3>
           <p>Crawl errors, broken redirects, duplicate content, slow pages, and missing schema. Found, logged, and fixed inside 5 working days.</p>
