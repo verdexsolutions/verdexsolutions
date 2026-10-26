@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   <section class="sec band svc-detail-sec" id="web-development">
     <div class="wrap svc-detail">
       <figure class="svc-img-frame rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Web development" loading="lazy">
+        <img src="<?php echo esc_url( verdex_image_url( 'wd-theme.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'wd-theme-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'wd-theme.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 50vw" width="1200" height="900" alt="Monitor showing theme code beside the finished website, with a layout sketch on the desk" loading="lazy" decoding="async">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           <span>Web Development</span>
@@ -130,7 +130,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </a>
       </div>
       <figure class="svc-img-frame rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="SEO" loading="lazy">
+        <img src="<?php echo esc_url( verdex_image_url( 'seo-hero.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'seo-hero-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'seo-hero.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 50vw" width="1200" height="900" alt="Laptop showing search results with the top result highlighted beside a tablet with rising search traffic" loading="lazy" decoding="async">
         <div class="svc-img-ph" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           <span>SEO</span>
