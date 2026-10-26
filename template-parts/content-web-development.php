@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
       </div>
       <figure class="svc-img-frame rv">
-        <img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Web development workspace" loading="eager">
+        <img src="<?php echo esc_url( verdex_image_url( 'wd-hero.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'wd-hero-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'wd-hero.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 50vw" width="1200" height="900" alt="Laptop with code on screen beside a notebook of page layout sketches at night" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </section>
@@ -63,37 +63,37 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
       <div class="svcp-cards">
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Custom WordPress theme" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'wd-theme.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'wd-theme-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'wd-theme.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Monitor showing theme code beside the finished website, with a layout sketch on the desk" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
           <h3>Custom WordPress theme</h3>
           <p>Built from your brand files or ours. No Elementor, no Divi. The output is clean PHP and CSS that loads fast and breaks less.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="WooCommerce stores" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'wd-woo.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'wd-woo-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'wd-woo.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Laptop showing an online shop product page beside a parcel and an order confirmation on a phone" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><path d="m16 8 5 3-5 3V8z"/></svg></span>
           <h3>WooCommerce stores</h3>
           <p>Variants, pricing rules, delivery zones, and tax logic. Tested against real checkout flows before we hand it over.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Neon-Green-Marketing-Analytics-Dashboard-1.png" alt="Performance built in" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'wd-speed.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'wd-speed-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'wd-speed.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Laptop showing high website speed scores beside a phone loading the site and a stopwatch" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 4.5 13.5H11l-.8 8 8.5-11H12Z"/></svg></span>
           <h3>Performance built in</h3>
           <p>Images sized, fonts loaded correctly, caching configured. Every site scores 90+ on Core Web Vitals before it goes live.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Graphic-Design-Workspace.png" alt="Editable by your team" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'wd-editable.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'wd-editable-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'wd-editable.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Tablet editing a website page beside the live page on a laptop and a to-do sticky note" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></span>
           <h3>Editable by your team</h3>
           <p>Advanced Custom Fields built into every template your client touches. Changing a heading or swapping an image takes 30 seconds.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-Web-Development-Workspace.png" alt="Migration and redirects" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'wd-migration.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'wd-migration-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'wd-migration.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Old website and new website on two laptops with a printed list of old and new page addresses" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M16.5 9.4 7.55 4.24"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/><circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27 22 19"/></svg></span>
           <h3>Migration and redirects</h3>
           <p>We move your content from the old host, map every redirect, and verify the domain switch. No ranking drop from a broken 301.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="https://verdexwebsolutions.com/wp-content/uploads/2026/10/Modern-SEO-Analytics-Workspace.png" alt="You keep every key" loading="lazy"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'handover-keys.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'handover-keys-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'handover-keys.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Keys being handed across a desk next to a laptop at a project handover" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3"/><rect x="4.5" y="11" width="15" height="9.5" rx="2.5"/></svg></span>
           <h3>You keep every key</h3>
           <p>Hosting, domain, and Google Analytics in your name from day one. No monthly fee to access your own site. No lock-in.</p>

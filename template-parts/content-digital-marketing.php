@@ -93,7 +93,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <p>Automated flows for people who visited but did not convert. Set up once, running continuously, no manual work after launch.</p>
         </div>
         <div class="svcp-card rv">
-          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'dm-review.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'dm-review-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'dm-review.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Notebook of handwritten review notes beside a laptop at night" loading="lazy" decoding="async"></figure>
+          <figure class="svcp-card-img"><img src="<?php echo esc_url( verdex_image_url( 'dm-review.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'dm-review-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'dm-review.webp' ) ); ?> 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="900" alt="Printed monthly report with charts and a highlighted section beside a desk calendar" loading="lazy" decoding="async"></figure>
           <span class="svcp-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
           <h3>Monthly review</h3>
           <p>What to cut, what to scale, and what to test next. Every month, in a call or a written report, your choice.</p>
