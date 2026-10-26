@@ -115,13 +115,13 @@ function verdex_hide_comments_toolbar( $bar ) {
 add_action( 'admin_bar_menu', 'verdex_hide_comments_toolbar', 999 );
 
 /**
- * On single posts only the cover image sits near the top of the page, so
+ * On single posts the cover image is already marked eager in single.php, so
  * every image inside the article can lazy-load.
  *
  * @param int $threshold Images to leave eager.
  * @return int
  */
 function verdex_lazy_threshold( $threshold ) {
-	return is_singular( 'post' ) ? 1 : $threshold;
+	return is_singular( 'post' ) ? 0 : $threshold;
 }
 add_filter( 'wp_omit_loading_attr_threshold', 'verdex_lazy_threshold' );
