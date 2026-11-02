@@ -66,7 +66,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 /* ---------- Shell ---------- */
 .sec{position:relative;background:var(--bg)}
 .sec--alt{background:var(--bg-2)}
-.wrap{width:100%;max-width:1230px;margin:0 auto;position:relative;
+.wrap{width:100%;max-width:1320px;margin:0 auto;position:relative;
   padding-left:max(20px,env(safe-area-inset-left,0px));
   padding-right:max(20px,env(safe-area-inset-right,0px))}
 .band{padding-block:clamp(64px,7.2vw,116px)}
