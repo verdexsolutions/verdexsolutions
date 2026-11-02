@@ -93,6 +93,7 @@
     dotPaint();
   }
   slider("revs", ".rev", "rDots", "rPrev", "rNext");
+  slider("pfRail", ".pf-slide", "pfDots", "pfPrev", "pfNext");
 
   /* ---- three-step quote form (Contact Form 7) ---- */
   var card = $("brief"), form = card && card.closest("form.wpcf7-form");

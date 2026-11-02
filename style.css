@@ -553,6 +553,7 @@ footer{background:var(--bg);border-top:1px solid var(--line-2);padding-block:cla
   .proc::before{display:none}
   .work{grid-template-columns:repeat(2,1fr)}
   .strip{grid-template-columns:repeat(2,1fr)}
+  .pf-slide{flex:0 0 calc((100% - 20px)/2)}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:860px){
@@ -565,6 +566,7 @@ footer{background:var(--bg);border-top:1px solid var(--line-2);padding-block:cla
 @media (max-width:560px){
   .work{grid-template-columns:1fr}
   .proc{grid-template-columns:1fr}
+  .pf-slide{flex:0 0 calc(100% - 32px)}
   .strip{grid-template-columns:1fr}
   .row2,.picks{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
@@ -790,3 +792,7 @@ a.svc-card__link:hover{color:var(--acc-2)}
 .proj-link svg{width:14px;height:14px;transition:transform .2s}
 .proj-link:hover{color:var(--acc)}
 .proj-link:hover svg{transform:translate(2px,-2px)}
+/* ---- portfolio home slider ---- */
+.pf-rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.pf-rail::-webkit-scrollbar{display:none}
+.pf-slide{flex:0 0 calc((100% - 40px)/3);scroll-snap-align:start}

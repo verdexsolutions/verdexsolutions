@@ -179,6 +179,111 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
   </section>
 
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="sec band" id="portfolio">
+    <div class="wrap">
+      <div class="head rv">
+        <div>
+          <span class="kicker">Recent work</span>
+          <h2>Projects we have <span class="it">shipped</span>.</h2>
+        </div>
+        <p class="lead">Real clients, live sites, across four countries. Every one handed over with full access and source files. <a class="ilink" href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>">See full portfolio</a></p>
+      </div>
+
+      <div class="pf-rail" id="pfRail">
+
+        <article class="proj pf-slide rv">
+          <a class="shot shot--img" href="https://www.urbnlivn.com/" target="_blank" rel="noopener" aria-label="Urban Living live site">
+            <img src="<?php echo esc_url( verdex_image_url( 'pf-urban-living.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'pf-urban-living-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'pf-urban-living.webp' ) ); ?> 1200w" sizes="(max-width:600px) calc(100vw - 32px),(max-width:900px) 50vw,33vw" width="1200" height="800" alt="Urban Living real estate website" loading="lazy" decoding="async">
+          </a>
+          <div class="proj-txt">
+            <em class="proj-tag">Real estate · Seattle</em>
+            <h3>Urban Living</h3>
+            <p>A boutique brokerage for Seattle and the Eastside. One address search on the homepage, with listings and agent profiles a scroll below.</p>
+            <a class="proj-res proj-link" href="https://www.urbnlivn.com/" target="_blank" rel="noopener">View live site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <article class="proj pf-slide rv">
+          <a class="shot shot--img" href="https://www.jhornig.com/" target="_blank" rel="noopener" aria-label="J. Hornig live site">
+            <img src="<?php echo esc_url( verdex_image_url( 'pf-hornig.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'pf-hornig-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'pf-hornig.webp' ) ); ?> 1200w" sizes="(max-width:600px) calc(100vw - 32px),(max-width:900px) 50vw,33vw" width="1200" height="800" alt="J. Hornig coffee online shop" loading="lazy" decoding="async">
+          </a>
+          <div class="proj-txt">
+            <em class="proj-tag">Coffee shop · Austria</em>
+            <h3>J. Hornig</h3>
+            <p>A Shopify store for an Austrian coffee roaster. Beans, capsules, subscriptions and barista courses, with free shipping shown on every page.</p>
+            <a class="proj-res proj-link" href="https://www.jhornig.com/" target="_blank" rel="noopener">View live site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <article class="proj pf-slide rv">
+          <a class="shot shot--img" href="https://www.digitalnext.com.au/" target="_blank" rel="noopener" aria-label="Digital Next live site">
+            <img src="<?php echo esc_url( verdex_image_url( 'pf-digital-next.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'pf-digital-next-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'pf-digital-next.webp' ) ); ?> 1200w" sizes="(max-width:600px) calc(100vw - 32px),(max-width:900px) 50vw,33vw" width="1200" height="800" alt="Digital Next marketing agency website" loading="lazy" decoding="async">
+          </a>
+          <div class="proj-txt">
+            <em class="proj-tag">Marketing agency · Melbourne</em>
+            <h3>Digital Next</h3>
+            <p>A WordPress site for a Melbourne digital marketing agency. The hero asks for one thing, your website address, and turns it into a free strategy request.</p>
+            <a class="proj-res proj-link" href="https://www.digitalnext.com.au/" target="_blank" rel="noopener">View live site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <article class="proj pf-slide rv">
+          <a class="shot shot--img" href="https://www.kensingtonmorocco.com/" target="_blank" rel="noopener" aria-label="Kensington Luxury Properties live site">
+            <img src="<?php echo esc_url( verdex_image_url( 'pf-kensington.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'pf-kensington-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'pf-kensington.webp' ) ); ?> 1200w" sizes="(max-width:600px) calc(100vw - 32px),(max-width:900px) 50vw,33vw" width="1200" height="800" alt="Kensington Luxury Properties Morocco website" loading="lazy" decoding="async">
+          </a>
+          <div class="proj-txt">
+            <em class="proj-tag">Luxury property · Morocco</em>
+            <h3>Kensington Luxury Properties</h3>
+            <p>Luxury villas for sale and rent across Morocco, in French. A four-field search for type, location, property and budget sits right on the hero photo.</p>
+            <a class="proj-res proj-link" href="https://www.kensingtonmorocco.com/" target="_blank" rel="noopener">View live site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <article class="proj pf-slide rv">
+          <a class="shot shot--img" href="https://aekotech.com/" target="_blank" rel="noopener" aria-label="Aeko Technologies live site">
+            <img src="<?php echo esc_url( verdex_image_url( 'pf-aeko.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'pf-aeko-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'pf-aeko.webp' ) ); ?> 1200w" sizes="(max-width:600px) calc(100vw - 32px),(max-width:900px) 50vw,33vw" width="1200" height="800" alt="Aeko Technologies IT support website" loading="lazy" decoding="async">
+          </a>
+          <div class="proj-txt">
+            <em class="proj-tag">IT support · Dallas–Fort Worth</em>
+            <h3>Aeko Technologies</h3>
+            <p>Managed IT and cyber security for businesses in Texas and Oklahoma. Every section ends on the same button: book a quick consultation.</p>
+            <a class="proj-res proj-link" href="https://aekotech.com/" target="_blank" rel="noopener">View live site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <article class="proj pf-slide rv">
+          <a class="shot shot--img" href="https://siloridge.com/" target="_blank" rel="noopener" aria-label="Silo Ridge Field Club live site">
+            <img src="<?php echo esc_url( verdex_image_url( 'pf-silo-ridge.webp' ) ); ?>" srcset="<?php echo esc_url( verdex_image_url( 'pf-silo-ridge-720.webp' ) ); ?> 720w, <?php echo esc_url( verdex_image_url( 'pf-silo-ridge.webp' ) ); ?> 1200w" sizes="(max-width:600px) calc(100vw - 32px),(max-width:900px) 50vw,33vw" width="1200" height="800" alt="Silo Ridge Field Club website" loading="lazy" decoding="async">
+          </a>
+          <div class="proj-txt">
+            <em class="proj-tag">Private club · Hudson Valley</em>
+            <h3>Silo Ridge Field Club</h3>
+            <p>An 850-acre private community in New York. Full-screen landscape photos carry the site, with golf, riding and lakeside living one menu away.</p>
+            <a class="proj-res proj-link" href="https://siloridge.com/" target="_blank" rel="noopener">View live site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+      </div><!-- /pfRail -->
+
+      <div class="revs-ctrl">
+        <button class="arw" id="pfPrev" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H5M11 6l-6 6 6 6"/></svg>
+        </button>
+        <div class="dots" id="pfDots"></div>
+        <button class="arw" id="pfNext" aria-label="Next project">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <p style="text-align:center;margin-top:32px">
+        <a href="<?php echo esc_url( verdex_page_url( 'portfolio' ) ); ?>" class="btn btn--ghost">See all projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </a>
+      </p>
+    </div>
+  </section>
+
   <!-- ============ WHY CHOOSE ============ -->
   <section class="sec band" id="why">
     <div class="wrap why">
