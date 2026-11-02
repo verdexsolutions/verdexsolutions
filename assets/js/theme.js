@@ -54,18 +54,18 @@
   });
 
   /* ---- sliders ---- */
-  function slider(railId, cardSel, dotsId, prevId, nextId){
+  function slider(railId, cardSel, dotsId, prevId, nextId, interval){
     var rail = $(railId), dots = $(dotsId), prev = $(prevId), next = $(nextId);
     if(!rail || !dots || !prev || !next) return;
     var cards = rail.querySelectorAll(cardSel);
     if(!cards.length) return;
-    var i = 0;
+    var i = 0, timer = null;
     for(var d = 0; d < cards.length; d++){
       (function(n){
         var b = document.createElement("button");
         b.className = "dot"; b.type = "button";
         b.setAttribute("aria-label", "Go to " + (n + 1));
-        b.addEventListener("click", function(){ go(n); });
+        b.addEventListener("click", function(){ stopAuto(); go(n); startAuto(); });
         dots.appendChild(b);
       })(d);
     }
@@ -75,25 +75,36 @@
       return w + gap;
     }
     function go(n){
-      i = Math.max(0, Math.min(n, cards.length - 1));
+      i = ((n % cards.length) + cards.length) % cards.length;
       rail.scrollTo({left: i * step(), behavior: reduce ? "auto" : "smooth"});
     }
     function dotPaint(){
-      var n = Math.round(rail.scrollLeft / step());
+      var n = Math.round(rail.scrollLeft / (step() || 1));
       var maxLeft = rail.scrollWidth - rail.clientWidth - 2;
       for(var k = 0; k < dots.children.length; k++) dots.children[k].classList.toggle("on", k === n);
-      prev.disabled = rail.scrollLeft <= 2;
-      next.disabled = rail.scrollLeft >= maxLeft;
+      if(!interval){ prev.disabled = rail.scrollLeft <= 2; next.disabled = rail.scrollLeft >= maxLeft; }
       i = n;
     }
-    prev.addEventListener("click", function(){ go(i - 1); });
-    next.addEventListener("click", function(){ go(i + 1); });
+    function stopAuto(){ clearInterval(timer); timer = null; }
+    function startAuto(){
+      if(!interval || reduce) return;
+      timer = setInterval(function(){ go(i + 1); }, interval);
+    }
+    prev.addEventListener("click", function(){ stopAuto(); go(i - 1); startAuto(); });
+    next.addEventListener("click", function(){ stopAuto(); go(i + 1); startAuto(); });
     rail.addEventListener("scroll", function(){ window.requestAnimationFrame(dotPaint); }, {passive:true});
     window.addEventListener("resize", dotPaint);
+    if(interval && !reduce){
+      rail.addEventListener("mouseenter", stopAuto);
+      rail.addEventListener("mouseleave", startAuto);
+      rail.addEventListener("touchstart", stopAuto, {passive:true});
+      rail.addEventListener("touchend", function(){ setTimeout(startAuto, 1500); }, {passive:true});
+    }
     dotPaint();
+    startAuto();
   }
   slider("revs", ".rev", "rDots", "rPrev", "rNext");
-  slider("pfRail", ".pf-slide", "pfDots", "pfPrev", "pfNext");
+  slider("pfRail", ".pf-slide", "pfDots", "pfPrev", "pfNext", 4000);
 
   /* ---- three-step quote form (Contact Form 7) ---- */
   var card = $("brief"), form = card && card.closest("form.wpcf7-form");
