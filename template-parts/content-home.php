@@ -285,7 +285,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   </section>
 
   <!-- ============ WHY CHOOSE ============ -->
-  <section class="sec band" id="why">
+  <section class="sec sec--alt band" id="why">
     <div class="wrap why">
       <div class="rv">
         <span class="kicker">Why choose Verdex</span>
@@ -327,7 +327,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   </section>
 
   <!-- ============ PROCESS ============ -->
-  <section class="sec sec--alt band" id="process">
+  <section class="sec band" id="process">
     <div class="wrap">
       <div class="proc-head rv">
         <span class="pill"><i></i> Our process</span>
