@@ -130,21 +130,32 @@ function verdex_image_url( $file ) {
 /**
  * Site logo link for the header and footer. Uses the logo set in
  * Appearance > Customize > Site Identity when there is one, otherwise the
- * uploaded Verdex logo.
+ * theme's own trimmed WebP copy of the Verdex logo (assets/images/verdex-logo.webp,
+ * made from the November 2026 upload, 640x170, transparent background).
  *
  * @param string $class Extra class for the link.
  */
 function verdex_logo( $class = '' ) {
-	$src = has_custom_logo()
-		? wp_get_attachment_image_url( get_theme_mod( 'custom_logo' ), 'full' )
-		: 'https://verdexwebsolutions.com/wp-content/uploads/2026/10/Verdex-Web-Solutions-Logo-1-2.png';
+	if ( has_custom_logo() ) {
+		$id  = get_theme_mod( 'custom_logo' );
+		$img = wp_get_attachment_image_src( $id, 'full' );
+		$src = $img ? $img[0] : '';
+		$w   = $img ? $img[1] : 640;
+		$h   = $img ? $img[2] : 170;
+	} else {
+		$src = verdex_image_url( 'verdex-logo.webp' );
+		$w   = 640;
+		$h   = 170;
+	}
 
 	printf(
-		'<a href="%1$s" class="mark %2$s" aria-label="%3$s"><img src="%4$s" alt="%3$s" width="1600" height="533" class="mark-img"></a>',
+		'<a href="%1$s" class="mark %2$s" aria-label="%3$s"><img src="%4$s" alt="%3$s" width="%5$d" height="%6$d" class="mark-img" decoding="async"></a>',
 		esc_url( home_url( '/' ) ),
 		esc_attr( $class ),
 		esc_attr( get_bloginfo( 'name' ) ),
-		esc_url( $src )
+		esc_url( $src ),
+		(int) $w,
+		(int) $h
 	);
 }
 

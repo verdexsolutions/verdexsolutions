@@ -35,7 +35,7 @@ function verdex_schema_organization() {
 	$home  = home_url( '/' );
 	$logo  = has_custom_logo()
 		? wp_get_attachment_image_url( get_theme_mod( 'custom_logo' ), 'full' )
-		: 'https://verdexwebsolutions.com/wp-content/uploads/2026/10/Verdex-Web-Solutions-Logo-1-2.png';
+		: 'https://verdexwebsolutions.com/wp-content/uploads/2026/11/Verdex-Web-Solutions-Logo-1-2-1.png';
 	$offer = array();
 
 	foreach ( verdex_schema_services() as $slug => $service ) {
