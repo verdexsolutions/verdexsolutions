@@ -89,15 +89,19 @@
       dots.hidden = stops < 2;
       prev.hidden = next.hidden = stops < 2;
     }
+    function setDot(n){
+      for(var k = 0; k < dots.children.length; k++) dots.children[k].classList.toggle("on", k === n);
+    }
     function go(n){
       i = ((n % stops) + stops) % stops;
+      setDot(i);
       rail.scrollTo({left: i * step(), behavior: reduce ? "auto" : "smooth"});
     }
     function dotPaint(){
       var maxLeft = rail.scrollWidth - rail.clientWidth - 2;
       var n = rail.scrollLeft >= maxLeft ? stops - 1 : Math.round(rail.scrollLeft / (step() || 1));
       n = Math.min(Math.max(n, 0), stops - 1);
-      for(var k = 0; k < dots.children.length; k++) dots.children[k].classList.toggle("on", k === n);
+      setDot(n);
       if(!interval){ prev.disabled = rail.scrollLeft <= 2; next.disabled = rail.scrollLeft >= maxLeft; }
       i = n;
     }
@@ -110,7 +114,9 @@
     prev.addEventListener("click", function(){ stopAuto(); go(i - 1); startAuto(); });
     next.addEventListener("click", function(){ stopAuto(); go(i + 1); startAuto(); });
     rail.addEventListener("scroll", function(){ window.requestAnimationFrame(dotPaint); }, {passive:true});
-    window.addEventListener("resize", function(){ buildDots(); dotPaint(); });
+    function refit(){ buildDots(); dotPaint(); }
+    if("ResizeObserver" in window) new ResizeObserver(refit).observe(rail);
+    else window.addEventListener("resize", refit);
     if(interval && !reduce){
       rail.addEventListener("mouseenter", stopAuto);
       rail.addEventListener("mouseleave", startAuto);
