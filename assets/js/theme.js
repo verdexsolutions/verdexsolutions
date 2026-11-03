@@ -59,47 +59,64 @@
     if(!rail || !dots || !prev || !next) return;
     var cards = rail.querySelectorAll(cardSel);
     if(!cards.length) return;
-    var i = 0, timer = null;
-    for(var d = 0; d < cards.length; d++){
-      (function(n){
-        var b = document.createElement("button");
-        b.className = "dot"; b.type = "button";
-        b.setAttribute("aria-label", "Go to " + (n + 1));
-        b.addEventListener("click", function(){ stopAuto(); go(n); startAuto(); });
-        dots.appendChild(b);
-      })(d);
-    }
+    var i = 0, timer = null, stops = 0;
     function step(){
       var w = cards[0].getBoundingClientRect().width;
       var gap = parseFloat(getComputedStyle(rail).columnGap || 0) || 0;
       return w + gap;
     }
+    // Positions the rail can actually stop at for the current screen width:
+    // 6 cards with 3 in view gives 4 stops, 2 in view gives 5, 1 gives 6.
+    function countStops(){
+      var inView = Math.max(1, Math.floor((rail.clientWidth + 2) / (step() || 1)));
+      return Math.max(1, cards.length - inView + 1);
+    }
+    function buildDots(){
+      var n = countStops();
+      if(n === stops) return;
+      stops = n;
+      dots.innerHTML = "";
+      for(var d = 0; d < stops; d++){
+        (function(k){
+          var b = document.createElement("button");
+          b.className = "dot"; b.type = "button";
+          b.setAttribute("aria-label", "Go to " + (k + 1));
+          b.addEventListener("click", function(){ stopAuto(); go(k); startAuto(); });
+          dots.appendChild(b);
+        })(d);
+      }
+      dots.hidden = stops < 2;
+      prev.hidden = next.hidden = stops < 2;
+    }
     function go(n){
-      i = ((n % cards.length) + cards.length) % cards.length;
+      i = ((n % stops) + stops) % stops;
       rail.scrollTo({left: i * step(), behavior: reduce ? "auto" : "smooth"});
     }
     function dotPaint(){
-      var n = Math.round(rail.scrollLeft / (step() || 1));
       var maxLeft = rail.scrollWidth - rail.clientWidth - 2;
+      var n = rail.scrollLeft >= maxLeft ? stops - 1 : Math.round(rail.scrollLeft / (step() || 1));
+      n = Math.min(Math.max(n, 0), stops - 1);
       for(var k = 0; k < dots.children.length; k++) dots.children[k].classList.toggle("on", k === n);
       if(!interval){ prev.disabled = rail.scrollLeft <= 2; next.disabled = rail.scrollLeft >= maxLeft; }
       i = n;
     }
     function stopAuto(){ clearInterval(timer); timer = null; }
     function startAuto(){
-      if(!interval || reduce) return;
+      if(!interval || reduce || stops < 2) return;
+      stopAuto();
       timer = setInterval(function(){ go(i + 1); }, interval);
     }
     prev.addEventListener("click", function(){ stopAuto(); go(i - 1); startAuto(); });
     next.addEventListener("click", function(){ stopAuto(); go(i + 1); startAuto(); });
     rail.addEventListener("scroll", function(){ window.requestAnimationFrame(dotPaint); }, {passive:true});
-    window.addEventListener("resize", dotPaint);
+    window.addEventListener("resize", function(){ buildDots(); dotPaint(); });
     if(interval && !reduce){
       rail.addEventListener("mouseenter", stopAuto);
       rail.addEventListener("mouseleave", startAuto);
       rail.addEventListener("touchstart", stopAuto, {passive:true});
       rail.addEventListener("touchend", function(){ setTimeout(startAuto, 1500); }, {passive:true});
     }
+    buildDots();
     dotPaint();
     startAuto();
   }
