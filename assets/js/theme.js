@@ -68,7 +68,8 @@
     // Positions the rail can actually stop at for the current screen width:
     // 6 cards with 3 in view gives 4 stops, 2 in view gives 5, 1 gives 6.
     function countStops(){
-      var inView = Math.max(1, Math.floor((rail.clientWidth + 2) / (step() || 1)));
+      var gap = parseFloat(getComputedStyle(rail).columnGap || 0) || 0;
+      var inView = Math.max(1, Math.floor((rail.clientWidth + gap + 2) / (step() || 1)));
       return Math.max(1, cards.length - inView + 1);
     }
     function buildDots(){
