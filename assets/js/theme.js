@@ -247,6 +247,7 @@
      and which services the brief asked about. */
   window.dataLayer = window.dataLayer || [];
   function where(el){
+    if(el.closest("#wa")) return "floating_button";
     if(el.closest("#drawer")) return "mobile_menu";
     if(el.closest("#nav, header")) return "header";
     if(el.closest("footer")) return "footer";
@@ -254,12 +255,14 @@
     return "page";
   }
   document.addEventListener("click", function(e){
-    var a = e.target.closest && e.target.closest('a[href^="mailto:"], a[href^="tel:"]');
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"], a[href^="tel:"], a[href*="wa.me/"], a[href*="api.whatsapp.com"]');
     if(!a) return;
-    var isMail = a.getAttribute("href").indexOf("mailto:") === 0;
+    var href = a.getAttribute("href");
+    var name = href.indexOf("mailto:") === 0 ? "email_click"
+      : href.indexOf("tel:") === 0 ? "phone_click" : "whatsapp_click";
     window.dataLayer.push({
-      event: isMail ? "email_click" : "phone_click",
-      link_url: a.getAttribute("href"),
+      event: name,
+      link_url: href.split("?")[0],
       click_location: where(a),
       page_path: location.pathname
     });
